@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define maxNumberOfCars 512
 
 
@@ -7,30 +8,26 @@ struct station {
     int distance;
     int cars[maxNumberOfCars];
     char stationColor;
-    struct station* father;
-    struct station* right;
-    struct station* left;
+    struct station *father;
+    struct station *right;
+    struct station *left;
 };
 
 
-struct station* highway = NULL;
+struct station *highway = NULL;
 
 
-struct station* insertNewStation(struct station* firstStation, struct station* currentStation)
-{
+struct station *insertNewStation(struct station *firstStation, struct station *currentStation) {
 
 
     if (firstStation == NULL)
         return currentStation;
 
 
-    if (currentStation->distance < firstStation->distance)
-    {
+    if (currentStation->distance < firstStation->distance) {
         firstStation->left = insertNewStation(firstStation->left, currentStation);
         firstStation->left->father = firstStation;
-    }
-    else if (currentStation->distance > firstStation->distance)
-    {
+    } else if (currentStation->distance > firstStation->distance) {
         firstStation->right = insertNewStation(firstStation->right, currentStation);
         firstStation->right->father = firstStation;
     }
@@ -40,10 +37,8 @@ struct station* insertNewStation(struct station* firstStation, struct station* c
 }
 
 
-
-void rightrotate(struct station* currentStation)
-{
-    struct station* left = currentStation->left;
+void rightrotate(struct station *currentStation) {
+    struct station *left = currentStation->left;
     currentStation->left = left->right;
     if (currentStation->left)
         currentStation->left->father = currentStation;
@@ -59,9 +54,8 @@ void rightrotate(struct station* currentStation)
 }
 
 
-void leftrotate(struct station* currentStation)
-{
-    struct station* right = currentStation->right;
+void leftrotate(struct station *currentStation) {
+    struct station *right = currentStation->right;
     currentStation->right = right->left;
     if (currentStation->right)
         currentStation->right->father = currentStation;
@@ -77,33 +71,27 @@ void leftrotate(struct station* currentStation)
 }
 
 
-void fixupStationInsideTheHighway(struct station* firstStation, struct station* currentStation)
-{
-    struct station* fatherCurrentStation = NULL;
-    struct station* grandFatherCurrentStation = NULL;
+void fixupStationInsideTheHighway(struct station *firstStation, struct station *currentStation) {
+    struct station *fatherCurrentStation = NULL;
+    struct station *grandFatherCurrentStation = NULL;
 
     while ((currentStation != firstStation) && (currentStation->stationColor != 0)
-           && (currentStation->father->stationColor == 1))
-    {
+           && (currentStation->father->stationColor == 1)) {
         fatherCurrentStation = currentStation->father;
         grandFatherCurrentStation = currentStation->father->father;
 
 
-        if (fatherCurrentStation == grandFatherCurrentStation->left)
-        {
+        if (fatherCurrentStation == grandFatherCurrentStation->left) {
 
-            struct station* uncle_currentStation = grandFatherCurrentStation->right;
+            struct station *uncle_currentStation = grandFatherCurrentStation->right;
 
 
-            if (uncle_currentStation != NULL && uncle_currentStation->stationColor == 1)
-            {
+            if (uncle_currentStation != NULL && uncle_currentStation->stationColor == 1) {
                 grandFatherCurrentStation->stationColor = 1;
                 fatherCurrentStation->stationColor = 0;
                 uncle_currentStation->stationColor = 0;
                 currentStation = grandFatherCurrentStation;
-            }
-
-            else {
+            } else {
 
 
                 if (currentStation == fatherCurrentStation->right) {
@@ -119,21 +107,16 @@ void fixupStationInsideTheHighway(struct station* firstStation, struct station* 
                 grandFatherCurrentStation->stationColor = t;
                 currentStation = fatherCurrentStation;
             }
-        }
+        } else {
+            struct station *uncle_currentStation = grandFatherCurrentStation->left;
 
 
-        else {
-            struct station* uncle_currentStation = grandFatherCurrentStation->left;
-
-
-            if ((uncle_currentStation != NULL) && (uncle_currentStation->stationColor == 1))
-            {
+            if ((uncle_currentStation != NULL) && (uncle_currentStation->stationColor == 1)) {
                 grandFatherCurrentStation->stationColor = 1;
                 fatherCurrentStation->stationColor = 0;
                 uncle_currentStation->stationColor = 0;
                 currentStation = grandFatherCurrentStation;
-            }
-            else {
+            } else {
 
                 if (currentStation == fatherCurrentStation->left) {
                     rightrotate(fatherCurrentStation);
@@ -153,27 +136,70 @@ void fixupStationInsideTheHighway(struct station* firstStation, struct station* 
 }
 
 
-void inorderVisitToTheHighway(struct station* firstStation)
-{
+void inorderVisitToTheHighway(struct station *firstStation) {
     if (firstStation == NULL)
         return;
     inorderVisitToTheHighway(firstStation->left);
     printf("station: %d ", firstStation->distance);
-    printf("car: %d ",firstStation->cars[0]);
+    printf("car: %d ", firstStation->cars[0]);
     inorderVisitToTheHighway(firstStation->right);
 }
 
-int main()
-{
-    for(int i=0;i<3;i++){
-        struct station* temporaryStation = malloc(sizeof(struct station));
-        temporaryStation->distance=1+i;
-        temporaryStation->cars[0]=1;
-        temporaryStation->stationColor='r';
-        temporaryStation->father=NULL;
-        temporaryStation->left=NULL;
-        temporaryStation->right=NULL;
-        highway=insertNewStation(highway,temporaryStation);
+struct station *nextStation(struct station *currentStation) {
+        //TODO from cormen
+}
+
+void deleteFixupStationOnTheHighway(struct station* firstStation,struct station* stationToRemove){
+    //TODO from cormen
+}
+
+struct station* findStation(int positionByDistance){
+    //TODO from cormen
+}
+
+void stationRemove(struct station *firstStation, struct station *stationToRemove) {
+    struct station *currentStation;
+    struct station *otherStation;
+    if (stationToRemove->left == NULL || stationToRemove->right == NULL) {
+        currentStation = stationToRemove;
+    } else currentStation = nextStation(stationToRemove);
+    if (currentStation->left != NULL) {
+        otherStation = currentStation->left;
+    } else otherStation = currentStation->right;
+    otherStation->father = currentStation->father;
+    if (currentStation->father == NULL) {
+        firstStation = otherStation;
+    } else if (currentStation = currentStation->father->left) {
+        currentStation->father->left = otherStation;
+    } else currentStation->father->right = otherStation;
+    if (currentStation != stationToRemove) {
+        stationToRemove->distance = currentStation->distance;
+        stationToRemove->cars = currentStation->cars; //TODO fix bugs
+        stationToRemove->father = currentStation->father;
+        stationToRemove->left = currentStation->left;
+        stationToRemove->right = currentStation->right;
+    }
+    if(currentStation->stationColor == 'b') deleteFixupStationOnTheHighway(highway,otherStation);
+}
+
+//--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
+void removeStationAtDistance(int distance) {
+    struct station* foundStation = findStation(distance);
+    stationRemove(highway, foundStation);
+}
+
+
+//----------------------------------------------------------------------------Main Functions-----------------------------------------------------------------------------//
+int main() {
+    for (int i = 0; i < 3; i++) {
+        struct station *temporaryStation = malloc(sizeof(struct station));
+        temporaryStation->distance = 1 + i;
+        temporaryStation->cars[0] = 1;
+        temporaryStation->stationColor = 'r';
+        temporaryStation->father = NULL;
+        temporaryStation->left = NULL;
+        temporaryStation->right = NULL;
+        highway = insertNewStation(highway, temporaryStation);
     }
     inorderVisitToTheHighway(highway);
 }
