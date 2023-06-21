@@ -83,13 +83,13 @@ void fixupStationInsideTheHighway(struct station *firstStation, struct station *
 
         if (fatherCurrentStation == grandFatherCurrentStation->left) {
 
-            struct station *uncle_currentStation = grandFatherCurrentStation->right;
+            struct station *uncleCurrentStation = grandFatherCurrentStation->right;
 
 
-            if (uncle_currentStation != NULL && uncle_currentStation->stationColor == 1) {
+            if (uncleCurrentStation != NULL && uncleCurrentStation->stationColor == 1) {
                 grandFatherCurrentStation->stationColor = 1;
                 fatherCurrentStation->stationColor = 0;
-                uncle_currentStation->stationColor = 0;
+                uncleCurrentStation->stationColor = 0;
                 currentStation = grandFatherCurrentStation;
             } else {
 
@@ -108,13 +108,13 @@ void fixupStationInsideTheHighway(struct station *firstStation, struct station *
                 currentStation = fatherCurrentStation;
             }
         } else {
-            struct station *uncle_currentStation = grandFatherCurrentStation->left;
+            struct station *uncleCurrentStation = grandFatherCurrentStation->left;
 
 
-            if ((uncle_currentStation != NULL) && (uncle_currentStation->stationColor == 1)) {
+            if ((uncleCurrentStation != NULL) && (uncleCurrentStation->stationColor == 1)) {
                 grandFatherCurrentStation->stationColor = 1;
                 fatherCurrentStation->stationColor = 0;
-                uncle_currentStation->stationColor = 0;
+                uncleCurrentStation->stationColor = 0;
                 currentStation = grandFatherCurrentStation;
             } else {
 
@@ -174,7 +174,7 @@ void stationRemove(struct station *firstStation, struct station *stationToRemove
     } else currentStation->father->right = otherStation;
     if (currentStation != stationToRemove) {
         stationToRemove->distance = currentStation->distance;
-        stationToRemove->cars = currentStation->cars; //TODO fix bugs
+        //stationToRemove->cars = currentStation->cars; //TODO fix bugs
         stationToRemove->father = currentStation->father;
         stationToRemove->left = currentStation->left;
         stationToRemove->right = currentStation->right;
@@ -200,6 +200,7 @@ int main() {
         temporaryStation->left = NULL;
         temporaryStation->right = NULL;
         highway = insertNewStation(highway, temporaryStation);
+        fixupStationInsideTheHighway(highway,temporaryStation);
     }
     inorderVisitToTheHighway(highway);
 }
