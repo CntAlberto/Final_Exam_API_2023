@@ -11,34 +11,42 @@ struct station {
     struct station *father;
 };
 typedef struct station Station;
-Station *nullStation;
+Station nullStation = {-1, {0}, NULL, NULL, NULL};
 
+Station *createStation(int distanceToInsert) {
+    Station *newStation = (Station *) malloc(sizeof(Station));
+    newStation->distance = distanceToInsert;
+    newStation->left = &nullStation;
+    newStation->right = &nullStation;
+    return newStation;
+}
 
-void insertNewStation(Station *firstStation, Station *stationToInsert) {
-    struct station *currentStation = nullStation;
-    struct station *otherStation = firstStation;
+void insertNewStation(Station **firstStation, Station *stationToInsert) {
+    struct station *currentStation = &nullStation;
+    struct station *rootStation = *firstStation;
 
-    while (otherStation != nullStation) {
-        currentStation = otherStation;
-        if (stationToInsert->distance < otherStation->distance) {
-            otherStation = otherStation->left;
-        } else otherStation = otherStation->right;
+    while (rootStation != &nullStation) {
+        currentStation = rootStation;
+        if (stationToInsert->distance < rootStation->distance) {
+            rootStation = rootStation->left;
+        } else rootStation = rootStation->right;
     }
-    stationToInsert->father = currentStation;
-    if (currentStation == nullStation) {
-        firstStation = stationToInsert;
+    if (currentStation == &nullStation) {
+        *firstStation = stationToInsert;
+
     } else if (stationToInsert->distance < currentStation->distance) {
         currentStation->left = stationToInsert;
     } else currentStation->right = stationToInsert;
 }
 
 void inorderVisitToTheHighway(Station *firstStation) {
-    if (firstStation == nullStation)return;
-    inorderVisitToTheHighway(firstStation->left);
-    printf("\nstation: %d ", firstStation->distance);
-    printf("left sister: %d ", firstStation->left->distance);
-    printf("right sister: %d ", firstStation->right->distance);
-    inorderVisitToTheHighway(firstStation->right);
+    if (firstStation != &nullStation) {
+        inorderVisitToTheHighway(firstStation->left);
+        printf("\nstation: %d ", firstStation->distance);
+        printf("left sister: %d ", firstStation->left->distance);
+        printf("right sister: %d ", firstStation->right->distance);
+        inorderVisitToTheHighway(firstStation->right);
+    }
 }
 
 struct station *nextStation(Station *currentStation) {
@@ -57,24 +65,23 @@ void removeStationAtDistance(int distance, Station *highway) {
 
 //----------------------------------------------------------------------------Main Functions-----------------------------------------------------------------------------//
 int main() {
-    int i;
-    nullStation = malloc(sizeof(Station));
-    nullStation->left = NULL;
-    nullStation->right = NULL;
-    nullStation->father=NULL;
-    nullStation->distance = -1;
-    Station *highway = nullStation;
-    Station *temporaryStation;
-    for (i = 0; i < 3; i++) {
-        temporaryStation = (Station *) malloc(sizeof(Station));
-        temporaryStation->distance = i;
-        temporaryStation->cars[0] = 1;
-        temporaryStation->left = nullStation;
-        temporaryStation->right = nullStation;
-        temporaryStation->father=nullStation;
-        insertNewStation(highway, temporaryStation);
-    }
-    inorderVisitToTheHighway(highway);
+
+    Station *highway = &nullStation;
+
+    Station *station1 = createStation(10);
+    Station *station2 = createStation(1);
+    Station *station3 = createStation(5);
+    Station *station4 = createStation(1234);
+    Station *station5 = createStation(754);
+
+    insertNewStation(&highway, station1);
+    insertNewStation(&highway, station2);
+    insertNewStation(&highway, station3);
+    insertNewStation(&highway, station4);
+    insertNewStation(&highway, station5);
+
+
+inorderVisitToTheHighway(highway);
 
 
 }
