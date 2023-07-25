@@ -153,8 +153,8 @@ int main() {
        */
     char command[20];
     scanf("%s", command);
-        if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
-        else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
+    if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
+    else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
     fflush(stdin);
     scanf("%s", command);
     if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
