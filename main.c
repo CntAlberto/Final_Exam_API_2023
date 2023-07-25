@@ -67,10 +67,33 @@ void clearUp(Station *firstStation) {
     }
 }
 
-struct station *nextStation(Station *currentStation) {
-    //TODO from cormen
-
+Station *minimumStation(Station *currentStation) {
+    while (currentStation->left != &nullStation) {
+        currentStation = currentStation->left;
+    }
     return currentStation;
+}
+
+void removeStation(Station **firstStation, int distanceToRemove) {
+    if (distanceToRemove < (*firstStation)->distance) {
+        removeStation(&((*firstStation)->left), distanceToRemove);
+    } else if (distanceToRemove > (*firstStation)->distance) {
+        removeStation(&((*firstStation)->right), distanceToRemove);
+    } else {
+        if ((*firstStation)->left == &nullStation) {
+            Station *currentStation = (*firstStation)->right;
+            free(*firstStation);
+            *firstStation = currentStation;
+        } else if ((*firstStation)->right == &nullStation) {
+            Station *currentStation = (*firstStation)->left;
+            free(*firstStation);
+            *firstStation = currentStation;
+        } else {
+            Station *currentStation = minimumStation((*firstStation)->right);
+            (*firstStation)->distance = currentStation->distance;
+            removeStation(&((*firstStation)->right), currentStation->distance);
+        }
+    }
 }
 
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
@@ -88,8 +111,10 @@ void addStation(Station **firstStation) {
     insertNewStation(firstStation, station);
 }
 
-void removeStationAtDistance(int distance, Station *highway) {
-    //TODO
+void removeStationAtDistance(Station **firstStation) {
+    int removingDistance;
+    scanf("%d", &removingDistance);
+    removeStation(firstStation, removingDistance);
 }
 
 void addAutoAtDistance(int distanceOfTheStation, int carToInsert) {
@@ -109,36 +134,48 @@ void planTheTrip(int distanceOfLeaving, int distanceOfArrival) {
 int main() {
 
     Station *highway = &nullStation;
-    /*int vettore1[5] = {1, 1, 1, 1, 1};
-    int vettore2[7] = {2, 2, 2, 2, 2, 2, 2};
-    int vettore3[3] = {3, 3, 3};
+    /*   int vettore1[5] = {1, 1, 1, 1, 1};
+       int vettore2[7] = {2, 2, 2, 2, 2, 2, 2};
+       int vettore3[3] = {3, 3, 3};
 
-    Station *station1 = createStation(10, 5, vettore1);
-    Station *station2 = createStation(5, 7, vettore2);
-    Station *station3 = createStation(34, 3, vettore3);
+       Station *station1 = createStation(10, 5, vettore1);
+       Station *station2 = createStation(5, 7, vettore2);
+       Station *station3 = createStation(34, 3, vettore3);
 
-    insertNewStation(&highway, station1);
-    insertNewStation(&highway, station2);
-    insertNewStation(&highway, station3);
+       insertNewStation(&highway, station1);
+       insertNewStation(&highway, station2);
+       insertNewStation(&highway, station3);
 
-    inorderVisitToTheHighway(highway);
-*/
+       inorderVisitToTheHighway(highway);
+
+       removeStation(&highway, station1->distance);
+       inorderVisitToTheHighway(highway);
+       */
     char command[20];
-    int comparison;
     scanf("%s", command);
-    comparison = strcmp(command, "aggiungi-stazione");
-    if (comparison == 0)addStation(&highway);
+        if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
+        else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
+    fflush(stdin);
+    scanf("%s", command);
+    if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
+    else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
+    fflush(stdin);
+    scanf("%s", command);
+    if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
+    else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
+    fflush(stdin);
+
     inorderVisitToTheHighway(highway);
     clearUp(highway);
 
 /*
    while(feof(stdin)==false){
-    scanf("%s", &command);
-    if(strcmp(command, "aggiungi-stazione")) addStation(&highway);
-    else if(strcmp(command, "demolisci-stazione")) removeStationAtDistance();
-    else if(strcmp(command, "aggiungi-auto")) addAutoAdDistance();
-    else if(strcmp(command, "rottama-auto")) removeAutoAtDistance();
-    else if(strcmp(command, "pianifica-percorso"))
+    scanf("%s", command);
+    if(strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
+    else if(strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
+    else if(strcmp(command, "aggiungi-auto") == 0) addAutoAdDistance();
+    else if(strcmp(command, "rottama-auto") == 0) removeAutoAtDistance();
+    else if(strcmp(command, "pianifica-percorso") == 0)
 }
  */
 
