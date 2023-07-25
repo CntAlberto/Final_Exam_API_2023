@@ -2,21 +2,21 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define maxNumberOfCars 512
-
 struct station {
     int distance;
+    int maxNumberOfCars;
     int cars[maxNumberOfCars];
     struct station *right;
     struct station *left;
     struct station *father;
 };
 typedef struct station Station;
-Station nullStation = {-1, {0}, NULL, NULL, NULL};
+Station nullStation = {-1,0, {0}, NULL, NULL, NULL};
 
 Station *createStation(int distanceToInsert, int numberOfCarsToInsert, int carsToInsert[]) {
     Station *newStation = (Station *) malloc(sizeof(Station));
     newStation->distance = distanceToInsert;
+    newStation->maxNumberOfCars=numberOfCarsToInsert;
     newStation->left = &nullStation;
     newStation->right = &nullStation;
     for (int i = 0; i < numberOfCarsToInsert; i++) {
@@ -44,15 +44,13 @@ void insertNewStation(Station **firstStation, Station *stationToInsert) {
 }
 
 void inorderVisitToTheHighway(Station *firstStation) {
-    int i = 0;
     if (firstStation != &nullStation) {
         inorderVisitToTheHighway(firstStation->left);
         printf("distance: %d, right: %d, left: %d\n", firstStation->distance, firstStation->right->distance,
                firstStation->left->distance);
         printf("cars: ");
-        while (firstStation->cars[i] != NULL) {
+        for(int i=0;i<firstStation->maxNumberOfCars;i++) {
             printf("%d ", firstStation->cars[i]);
-            i++;
         }
         printf("\n");
         inorderVisitToTheHighway(firstStation->right);
