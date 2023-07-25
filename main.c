@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define maxNumberOfCars 512
 
@@ -13,11 +14,14 @@ struct station {
 typedef struct station Station;
 Station nullStation = {-1, {0}, NULL, NULL, NULL};
 
-Station *createStation(int distanceToInsert) {
+Station *createStation(int distanceToInsert, int numberOfCarsToInsert, int carsToInsert[]) {
     Station *newStation = (Station *) malloc(sizeof(Station));
     newStation->distance = distanceToInsert;
     newStation->left = &nullStation;
     newStation->right = &nullStation;
+    for (int i = 0; i < numberOfCarsToInsert; i++) {
+        newStation->cars[i] = carsToInsert[i];
+    }
     return newStation;
 }
 
@@ -40,11 +44,17 @@ void insertNewStation(Station **firstStation, Station *stationToInsert) {
 }
 
 void inorderVisitToTheHighway(Station *firstStation) {
+    int i = 0;
     if (firstStation != &nullStation) {
         inorderVisitToTheHighway(firstStation->left);
-        printf("\nstation: %d ", firstStation->distance);
-        printf("left sister: %d ", firstStation->left->distance);
-        printf("right sister: %d ", firstStation->right->distance);
+        printf("distance: %d, right: %d, left: %d\n", firstStation->distance, firstStation->right->distance,
+               firstStation->left->distance);
+        printf("cars: ");
+        while (firstStation->cars[i] != NULL) {
+            printf("%d ", firstStation->cars[i]);
+            i++;
+        }
+        printf("\n");
         inorderVisitToTheHighway(firstStation->right);
     }
 }
@@ -56,10 +66,34 @@ struct station *nextStation(Station *currentStation) {
 }
 
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
-void removeStationAtDistance(int distance, Station *highway) {
+void addStation(Station **firstStation) {
+    int numberOfCars;
+    int car[numberOfCars];
+    int insertingDistance;
 
-    // struct station *foundStation = findStation(distance);
-    // stationRemove(highway, foundStation);
+    scanf("%d", &insertingDistance);
+    scanf("%d", &numberOfCars);
+    for (int i = 0; i < numberOfCars; i++) {
+        scanf("%d", &car[i]);
+    }
+    Station *station = createStation(insertingDistance, numberOfCars, car);
+    insertNewStation(firstStation, station);
+}
+
+void removeStationAtDistance(int distance, Station *highway) {
+    //TODO
+}
+
+void addAutoAtDistance(int distanceOfTheStation, int carToInsert) {
+    //TODO
+}
+
+void removeAutoAtDistance(int distanceOfTheStation, int autoToRemove) {
+    //TODO
+}
+
+void planTheTrip(int distanceOfLeaving, int distanceOfArrival) {
+
 }
 
 
@@ -67,22 +101,34 @@ void removeStationAtDistance(int distance, Station *highway) {
 int main() {
 
     Station *highway = &nullStation;
+    int vettore1[5] = {1, 1, 1, 1, 1};
+    int vettore2[7] = {2, 2, 2, 2, 2, 2, 2};
+    int vettore3[3] = {3, 3, 3};
 
-    Station *station1 = createStation(10);
-    Station *station2 = createStation(1);
-    Station *station3 = createStation(5);
-    Station *station4 = createStation(1234);
-    Station *station5 = createStation(754);
+    Station *station1 = createStation(10, 5, vettore1);
+    Station *station2 = createStation(5, 7, vettore2);
+    Station *station3 = createStation(34, 3, vettore3);
 
     insertNewStation(&highway, station1);
     insertNewStation(&highway, station2);
     insertNewStation(&highway, station3);
-    insertNewStation(&highway, station4);
-    insertNewStation(&highway, station5);
+
+    inorderVisitToTheHighway(highway);
 
 
-inorderVisitToTheHighway(highway);
 
+
+//    char command;
+/*
+   while(feof(stdin)==false){
+    scanf("%s", &command);
+    if(strcmp(command, "aggiungi-stazione")) addStation(&highway);
+    else if(strcmp(command, "demolisci-stazione")) removeStationAtDistance();
+    else if(strcmp(command, "aggiungi-auto")) addAutoAdDistance();
+    else if(strcmp(command, "rottama-auto")) removeAutoAtDistance();
+    else if(strcmp(command, "pianifica-percorso"))
+}
+ */
 
 }
 
