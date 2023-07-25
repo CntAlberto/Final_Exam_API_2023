@@ -2,21 +2,22 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 struct station {
     int distance;
     int maxNumberOfCars;
-    int cars[maxNumberOfCars];
+    int cars[512];
     struct station *right;
     struct station *left;
     struct station *father;
 };
 typedef struct station Station;
-Station nullStation = {-1,0, {0}, NULL, NULL, NULL};
+Station nullStation = {-1, 0, {0}, NULL, NULL, NULL};
 
 Station *createStation(int distanceToInsert, int numberOfCarsToInsert, int carsToInsert[]) {
     Station *newStation = (Station *) malloc(sizeof(Station));
     newStation->distance = distanceToInsert;
-    newStation->maxNumberOfCars=numberOfCarsToInsert;
+    newStation->maxNumberOfCars = numberOfCarsToInsert;
     newStation->left = &nullStation;
     newStation->right = &nullStation;
     for (int i = 0; i < numberOfCarsToInsert; i++) {
@@ -49,11 +50,20 @@ void inorderVisitToTheHighway(Station *firstStation) {
         printf("distance: %d, right: %d, left: %d\n", firstStation->distance, firstStation->right->distance,
                firstStation->left->distance);
         printf("cars: ");
-        for(int i=0;i<firstStation->maxNumberOfCars;i++) {
+        for (int i = 0; i < firstStation->maxNumberOfCars; i++) {
             printf("%d ", firstStation->cars[i]);
         }
         printf("\n");
         inorderVisitToTheHighway(firstStation->right);
+    }
+}
+
+void clearUp(Station *firstStation) {
+    if (firstStation != &nullStation) {
+        clearUp(firstStation->left);
+        clearUp(firstStation->right);
+        free(firstStation);
+
     }
 }
 
@@ -66,11 +76,11 @@ struct station *nextStation(Station *currentStation) {
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
 void addStation(Station **firstStation) {
     int numberOfCars;
-    int car[numberOfCars];
     int insertingDistance;
 
     scanf("%d", &insertingDistance);
     scanf("%d", &numberOfCars);
+    int car[numberOfCars];
     for (int i = 0; i < numberOfCars; i++) {
         scanf("%d", &car[i]);
     }
@@ -99,7 +109,7 @@ void planTheTrip(int distanceOfLeaving, int distanceOfArrival) {
 int main() {
 
     Station *highway = &nullStation;
-    int vettore1[5] = {1, 1, 1, 1, 1};
+    /*int vettore1[5] = {1, 1, 1, 1, 1};
     int vettore2[7] = {2, 2, 2, 2, 2, 2, 2};
     int vettore3[3] = {3, 3, 3};
 
@@ -112,11 +122,15 @@ int main() {
     insertNewStation(&highway, station3);
 
     inorderVisitToTheHighway(highway);
+*/
+    char command[20];
+    int comparison;
+    scanf("%s", command);
+    comparison = strcmp(command, "aggiungi-stazione");
+    if (comparison == 0)addStation(&highway);
+    inorderVisitToTheHighway(highway);
+    clearUp(highway);
 
-
-
-
-//    char command;
 /*
    while(feof(stdin)==false){
     scanf("%s", &command);
