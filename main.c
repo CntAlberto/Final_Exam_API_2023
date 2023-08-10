@@ -15,12 +15,13 @@ typedef struct station Station;
 Station nullStation = {-1, 0, {0}, NULL, NULL, NULL};
 
 Station *createStation(int distanceToInsert, int numberOfCarsToInsert, int carsToInsert[]) {
+    int i;
     Station *newStation = (Station *) malloc(sizeof(Station));
     newStation->distance = distanceToInsert;
     newStation->maxNumberOfCars = numberOfCarsToInsert;
     newStation->left = &nullStation;
     newStation->right = &nullStation;
-    for (int i = 0; i < numberOfCarsToInsert; i++) {
+    for (i = 0; i < numberOfCarsToInsert; i++) {
         newStation->cars[i] = carsToInsert[i];
     }
     return newStation;
@@ -96,6 +97,15 @@ void removeStation(Station **firstStation, int distanceToRemove) {
     }
 }
 
+Station *searchStation(Station *firstStation, int distanceToFind) {
+    if (firstStation == &nullStation || distanceToFind == (firstStation)->distance) {
+        return firstStation;
+    }
+    if (distanceToFind < firstStation->distance) {
+        return searchStation(firstStation->left, distanceToFind);
+    } else return searchStation(firstStation->right, distanceToFind);
+}
+
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
 void addStation(Station **firstStation) {
     int numberOfCars;
@@ -117,12 +127,34 @@ void removeStationAtDistance(Station **firstStation) {
     removeStation(firstStation, removingDistance);
 }
 
-void addAutoAtDistance(int distanceOfTheStation, int carToInsert) {
-    //TODO
+void addAutoAtDistance(Station *firstStation) {
+    int distanceOfTheStation, carToInsert;
+    scanf("%d", &distanceOfTheStation);
+    fflush(stdin);
+    scanf("%d", &carToInsert);
+    fflush(stdin);
+    Station *stationToFind = searchStation(firstStation, distanceOfTheStation);
+    for (int i = 0; i < 512; i++) {
+        if (stationToFind->cars[i] == 0) {
+            stationToFind->cars[i] = carToInsert;
+            continue;
+        }
+    }
 }
 
-void removeAutoAtDistance(int distanceOfTheStation, int autoToRemove) {
-    //TODO
+void removeAutoAtDistance(Station *firstStation) {
+    int distanceOfTheStation, carToRemove;
+    scanf("%d", &distanceOfTheStation);
+    fflush(stdin);
+    scanf("%d", &carToRemove);
+    fflush(stdin);
+    Station *stationToFind = searchStation(firstStation, distanceOfTheStation);
+    for (int i = 0; i < 512; i++) {
+        if (stationToFind->cars[i] == carToRemove) {
+            stationToFind->cars[i] = 0;
+            continue;
+        }
+    }
 }
 
 void planTheTrip(int distanceOfLeaving, int distanceOfArrival) {
@@ -134,23 +166,21 @@ void planTheTrip(int distanceOfLeaving, int distanceOfArrival) {
 int main() {
 
     Station *highway = &nullStation;
-    /*   int vettore1[5] = {1, 1, 1, 1, 1};
-       int vettore2[7] = {2, 2, 2, 2, 2, 2, 2};
-       int vettore3[3] = {3, 3, 3};
+    /*  int vettore1[5] = {1, 1, 5, 1, 1};
+      int vettore2[7] = {2, 2, 2, 5, 2, 2, 2};
+      int vettore3[3] = {3, 5, 3};
 
-       Station *station1 = createStation(10, 5, vettore1);
-       Station *station2 = createStation(5, 7, vettore2);
-       Station *station3 = createStation(34, 3, vettore3);
+      Station *station1 = createStation(10, 5, vettore1);
+      Station *station2 = createStation(5, 7, vettore2);
+      Station *station3 = createStation(34, 3, vettore3);
 
-       insertNewStation(&highway, station1);
-       insertNewStation(&highway, station2);
-       insertNewStation(&highway, station3);
+      insertNewStation(&highway, station1);
+      insertNewStation(&highway, station2);
+      insertNewStation(&highway, station3);
 
-       inorderVisitToTheHighway(highway);
+      inorderVisitToTheHighway(highway);
+      */
 
-       removeStation(&highway, station1->distance);
-       inorderVisitToTheHighway(highway);
-       */
     char command[20];
     scanf("%s", command);
     if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
@@ -164,9 +194,14 @@ int main() {
     if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
     else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
     fflush(stdin);
+    scanf("%s", command);
 
+    if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance(highway);
+    else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance(highway);
+    fflush(stdin);
     inorderVisitToTheHighway(highway);
     clearUp(highway);
+//TODO fare testing sulle funzione di aggiunta e rimozione auto che danno risultati errati
 
 /*
    while(feof(stdin)==false){
