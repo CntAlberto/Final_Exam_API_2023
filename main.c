@@ -14,6 +14,7 @@ struct station {
 };
 typedef struct station Station;
 Station *nullStation;
+Station *highway;
 int maxAuto = 0;
 
 Station *createStation(int distanceToInsert, int numberOfCarsToInsert, int carsToInsert[]) {
@@ -30,9 +31,9 @@ Station *createStation(int distanceToInsert, int numberOfCarsToInsert, int carsT
     return newStation;
 }
 
-int insertNewStation(Station **firstStation, Station *stationToInsert) {
+int insertNewStation(Station *stationToInsert) {
     struct station *currentStation = nullStation;
-    struct station *rootStation = *firstStation;
+    struct station *rootStation = highway;
 
     while (rootStation != nullStation) {
         currentStation = rootStation;
@@ -41,7 +42,7 @@ int insertNewStation(Station **firstStation, Station *stationToInsert) {
         } else rootStation = rootStation->right;
     }
     if (currentStation == nullStation) {
-        *firstStation = stationToInsert;
+        highway = stationToInsert;
         return 1;
     } else if (stationToInsert->distance < currentStation->distance) {
         currentStation->left = stationToInsert;
@@ -52,26 +53,12 @@ int insertNewStation(Station **firstStation, Station *stationToInsert) {
     } else return 0;
 }
 
-void inorderVisitToTheHighway(Station *firstStation) {
-    if (firstStation != nullStation) {
-        inorderVisitToTheHighway(firstStation->left);
-        printf("distance: %d, right: %d, left: %d\n", firstStation->distance, firstStation->right->distance,
-               firstStation->left->distance);
-        printf("cars: ");
-        for (int i = 0; i < firstStation->maxNumberOfCars; i++) {
-            printf("%d ", firstStation->cars[i]);
-        }
-        printf("\n");
-        inorderVisitToTheHighway(firstStation->right);
-    }
-}
 
 void clearUp(Station *firstStation) {
-    if (firstStation != nullStation) {
+    if (highway != nullStation) {
         clearUp(firstStation->left);
         clearUp(firstStation->right);
-        free(firstStation);
-
+        free(highway);
     }
 }
 
@@ -83,60 +70,78 @@ Station *minimumStation(Station *currentStation) {
 }
 
 //TODO deep debugging, isn't executed after one call
-int removeStation(Station *firstStation, int distanceToRemove) {
-    Station *currentStation;
-    if (firstStation == nullStation) return 0;
-    if (distanceToRemove < firstStation->distance) {
-        removeStation(firstStation->left, distanceToRemove);
-    } else if (distanceToRemove > firstStation->distance) {
-        removeStation(firstStation->right, distanceToRemove);
-    } else {
-        if (firstStation->left == nullStation) {
-            currentStation = firstStation->right;
-            free(firstStation);
-            firstStation = currentStation;
-            return 1;
-        } else if (firstStation->right == nullStation) {
-            currentStation = firstStation->left;
-            free(firstStation);
-            firstStation = currentStation;
-            return 1;
-        } else if (firstStation->left != nullStation && firstStation->right != nullStation) {
-            currentStation = minimumStation(firstStation->right);
-            firstStation->distance = currentStation->distance;
-            removeStation(firstStation->right, currentStation->distance);
-        } else free(firstStation);
+int removeStation(int distanceToRemove) {
+    if (highway == nullStation) {
+        return 0;
     }
+
+    if (distanceToRemove < highway->distance) {
+        if (removeStation(distanceToRemove)) {
+            highway->left = nullStation;
+            return 1;
+        }
+    } else if (distanceToRemove > highway->distance) {
+        if (removeStation(distanceToRemove)) {
+            highway->right = nullStation;
+            return 1;
+        }
+    } else {
+        if (highway->left == nullStation) {
+            Station *temp = highway->right;
+            free(highway);
+            highway = temp;
+            return 1;
+        } else if (highway->right == nullStation) {
+            Station *temp = highway->left;
+            free(highway);
+            highway = temp;
+            return 1;
+        }
+
+        Station *minStation = minimumStation(highway->right);
+        highway->distance = minStation->distance;
+        if (removeStation(minStation->distance)) {
+            highway->right = nullStation;
+            return 1;
+        }
+    }
+
     return 0;
 }
 
-Station *searchStation(Station *firstStation, int distanceToFind) {
-    if (firstStation == nullStation || distanceToFind == (firstStation)->distance) {
-        return firstStation;
+Station *searchStation(int distanceToFind) {
+    if (highway == nullStation || distanceToFind == (highway)->distance) {
+        return highway;
     }
-    if (distanceToFind < firstStation->distance) {
-        return searchStation(firstStation->left, distanceToFind);
-    } else return searchStation(firstStation->right, distanceToFind);
+    if (distanceToFind < highway->distance) {
+        highway = highway->left;
+        return searchStation(distanceToFind);
+    } else {
+        highway = highway->right;
+        return searchStation(distanceToFind);
+    }
 }
 
-Station *predecessorStation(Station *firstStation, int distance) {
+Station *predecessorStation(int distance) {
     Station *predecessor = nullStation;
-    while (firstStation != nullStation) {
-        if (firstStation->distance < distance) {
-            predecessor = firstStation;
-            firstStation = firstStation->right;
-        } else firstStation = firstStation->left;
+    while (highway != nullStation) {
+        if (highway->distance < distance) {
+            predecessor = highway;
+            highway = highway->right;
+        } else highway = highway->left;
     }
     return predecessor;
 }
 
-void findMaxAuto(Station *firstStation) {
-    if (firstStation != nullStation) {
-        findMaxAuto(firstStation->left);
-        for (int i = 0; i < firstStation->maxNumberOfCars; i++) {
-            if (firstStation->cars[i] > maxAuto)maxAuto = firstStation->cars[i];
+void findMaxAuto() {
+    if (highway != nullStation) {
+        highway = highway->left;
+        findMaxAuto();
+        for (int i = 0; i < highway->maxNumberOfCars; i++) {
+            if (highway->cars[i] > maxAuto)maxAuto = highway->cars[i];
         }
-        findMaxAuto(firstStation->right);
+        highway = highway->right;
+        findMaxAuto();
     }
 }
 
@@ -149,7 +154,7 @@ int findActualMaxAuto(Station *stationToFindMaxAuto) {
 }
 
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
-void addStation(Station **firstStation) {
+void addStation() {
     int numberOfCars = 0;
     int insertingDistance = 0;
     if (scanf("%d", &insertingDistance) == 0) return;
@@ -159,25 +164,25 @@ void addStation(Station **firstStation) {
         if (scanf("%d", &car[i]) == 0) return;
     }
     Station *station = createStation(insertingDistance, numberOfCars, car);
-    if (insertNewStation(firstStation, station) == 1)printf("aggiunta\n");
+    if (insertNewStation(station) == 1)printf("aggiunta\n");
     else printf("non aggiunta\n");
 
 }
 
-void removeStationAtDistance(Station *firstStation) {
+void removeStationAtDistance() {
     int removingDistance;
     if (scanf("%d", &removingDistance) == 0) return;
-    if (removeStation(firstStation, removingDistance) == 1)printf("demolita\n");
+    if (removeStation(removingDistance) == 1)printf("demolita\n");
     else printf("non demolita\n");
 }
 
-void addAutoAtDistance(Station *firstStation) {
+void addAutoAtDistance() {
     int distanceOfTheStation, carToInsert, i;
     if (scanf("%d", &distanceOfTheStation) == 0) return;
     fflush(stdin);
     if (scanf("%d", &carToInsert) == 0) return;
     fflush(stdin);
-    Station *stationToFind = searchStation(firstStation, distanceOfTheStation);
+    Station *stationToFind = searchStation(distanceOfTheStation);
     stationToFind->maxNumberOfCars++;
     for (i = 0; i < 512; i++) {
         if (stationToFind->cars[i] == 0) {
@@ -189,13 +194,13 @@ void addAutoAtDistance(Station *firstStation) {
     if (i == 512)printf("non aggiunta\n");
 }
 
-void removeAutoAtDistance(Station *firstStation) {
+void removeAutoAtDistance() {
     int distanceOfTheStation, carToRemove, i;
     if (scanf("%d", &distanceOfTheStation) == 0) return;
     fflush(stdin);
     if (scanf("%d", &carToRemove) == 0) return;
     fflush(stdin);
-    Station *stationToFind = searchStation(firstStation, distanceOfTheStation);
+    Station *stationToFind = searchStation(distanceOfTheStation);
     stationToFind->maxNumberOfCars--;
     for (i = 0; i < 512; i++) {
         if (stationToFind->cars[i] == carToRemove) {
@@ -207,12 +212,12 @@ void removeAutoAtDistance(Station *firstStation) {
     if (i == 512)printf("non rottamata\n");
 }
 
-void planTheTrip(Station *firstStation) {
+void planTheTrip() {
     int distanceOfLeaving, distanceOfArrival;
     if (scanf("%d", &distanceOfLeaving) == 0) return;
     if (scanf("%d", &distanceOfArrival) == 0) return;
-    Station *leavingStation = searchStation(firstStation, distanceOfLeaving);
-    Station *arrivalStation = searchStation(firstStation, distanceOfArrival);
+    Station *leavingStation = searchStation(distanceOfLeaving);
+    Station *arrivalStation = searchStation(distanceOfArrival);
     Station *predecessor, *checkpointStation;
     int actualAuto;
     if (leavingStation == NULL) {
@@ -223,17 +228,17 @@ void planTheTrip(Station *firstStation) {
         printf("nessun percorso");
         return;
     } else {
-        findMaxAuto(firstStation);
+        findMaxAuto();
         if (distanceOfLeaving > distanceOfArrival) {
             //TODO usare dijkstra
         } else if (distanceOfLeaving < distanceOfArrival) {
-            predecessor = predecessorStation(firstStation, arrivalStation->distance);
+            predecessor = predecessorStation(arrivalStation->distance);
             checkpointStation = arrivalStation;
             while (predecessor != leavingStation) {
                 actualAuto = findActualMaxAuto(predecessor);
                 if ((predecessor->distance + maxAuto) >= checkpointStation->distance) {
                     if (predecessor->distance + actualAuto >= checkpointStation->distance) {
-                        predecessor = predecessorStation(firstStation, predecessor->distance);
+                        predecessor = predecessorStation(predecessor->distance);
                     } else {
                         checkpointStation = predecessor;
                         printf("%d->", checkpointStation->distance);
@@ -247,83 +252,55 @@ void planTheTrip(Station *firstStation) {
 
 //----------------------------------------------------------------------------Main Functions-----------------------------------------------------------------------------//
 int main() {
-    nullStation = malloc(sizeof(Station));
+    nullStation = (Station *) malloc(sizeof(Station));
     nullStation->distance = -1;
     nullStation->right = NULL;
     nullStation->left = NULL;
     nullStation->maxNumberOfCars = 0;
     nullStation->father = NULL;
-    Station *highway = nullStation;
-    int vettore1[5] = {1, 1, 5, 1, 1};
-    int vettore2[7] = {2, 2, 2, 5, 2, 2, 2};
-    int vettore3[3] = {3, 5, 3};
+    highway = (Station *) malloc(sizeof(Station));
+    highway = nullStation;
+    int vettore1[5] = {1, 1};
 
-    Station *station1 = createStation(10, 5, vettore1);
-    Station *station2 = createStation(5, 7, vettore2);
-    Station *station3 = createStation(34, 3, vettore3);
-
-    insertNewStation(&highway, station1);
-    insertNewStation(&highway, station2);
-    insertNewStation(&highway, station3);
+    Station *station1 = createStation(10, 2, vettore1);
+    Station *station2 = createStation(5, 2, vettore1);
+    Station *station3 = createStation(34, 2, vettore1);
+    printf("pronto");
+    insertNewStation(station1);
+    insertNewStation(station2);
+    insertNewStation(station3);
 
     printf("aggiunte");
 
-    if (removeStation(highway, station1->distance) == 1) printf("rimossa 1");
-    if (removeStation(highway, station2->distance) == 1) printf("rimossa 2");
-    if (removeStation(highway, station3->distance) == 1) printf("rimossa 3");
-/*
-            scanf("%s", command);
-           if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
-           else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
-           fflush(stdin);
+    //   if (removeStation(station1->distance) == 1) printf("rimossa 1");
+    //   if (removeStation(station2->distance) == 1) printf("rimossa 2");
+    //   if (removeStation(station3->distance) == 1) printf("rimossa 3");
 
-           scanf("%s", command);
-           if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
-           else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
-           fflush(stdin);
-
-           scanf("%s", command);
-           if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
-           else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(&highway);
-           fflush(stdin);
-
-           scanf("%s", command);
-           if (strcmp(command, "pianifica-percorso") == 0) planTheTrip(highway);
-       //    inorderVisitToTheHighway(highway);
-
-             if(scanf("%s", command)==0)return;
-              if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance(highway);
-              else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance(highway);
-              fflush(stdin);
-
-
-              if(scanf("%s", command)==0)return;
-              if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance(highway);
-              else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance(highway);
-              fflush(stdin);
-
-              if(scanf("%s", command)==0)return;
-              if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance(highway);
-              else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance(highway);
-              fflush(stdin);
-
-             inorderVisitToTheHighway(highway);
-
-    char command[20];
-
-    while (feof(stdin) == false) {
-        if (scanf("%s", command) != 0) {
-            if (strcmp(command, "aggiungi-stazione") == 0) addStation(&highway);
-            else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance(highway);
-            else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance(highway);
-            else if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance(highway);
-            else if (strcmp(command, "pianifica-percorso") == 0) planTheTrip(highway);
-        }
-
-    }
-*/
     clearUp(highway);
+    free(nullStation);
+    free(highway);
+
 }
+
+/*   char command[20];
+
+   while (feof(stdin) == false) {
+       if (scanf("%s", command) != 0) {
+           if (strcmp(command, "aggiungi-stazione") == 0) addStation();
+           else if (strcmp(command, "demolisci-stazione") == 0) removeStationAtDistance();
+           else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance();
+           else if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance();
+           else if (strcmp(command, "pianifica-percorso") == 0) planTheTrip();
+       }
+
+   }
+
+   clearUp(highway);
+   free(nullStation);
+   free(highway);
+}
+ */
+
 
 /**
  * USARE LA SCANF RIPETUTA PER LEGGERE PIU PAROLE NELLA STESSA RIGA
