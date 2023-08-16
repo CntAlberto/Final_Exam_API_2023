@@ -1259,7 +1259,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 non rottamata
@@ -4375,7 +4374,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -4979,7 +4977,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -5122,7 +5119,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 non aggiunta
 aggiunta
 aggiunta
@@ -5180,7 +5176,6 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 rottamata
@@ -5491,7 +5486,6 @@ aggiunta
 aggiunta
 non demolita
 aggiunta
-non rottamata
 aggiunta
 nessun percorso
 aggiunta
@@ -5538,6 +5532,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+aggiunta
 demolita
 aggiunta
 aggiunta
@@ -7752,7 +7747,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -7799,7 +7793,6 @@ aggiunta
 aggiunta
 non aggiunta
 non demolita
-non rottamata
 non aggiunta
 aggiunta
 aggiunta
@@ -7857,7 +7850,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -8086,7 +8078,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -10271,7 +10262,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -11297,7 +11287,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 rottamata
 aggiunta
 aggiunta
@@ -11447,7 +11436,6 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -11733,7 +11721,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -13512,7 +13499,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -13811,7 +13797,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 demolita
 aggiunta
@@ -15003,6 +14988,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
+aggiunta
 aggiunta
 aggiunta
 aggiunta
@@ -16779,7 +16765,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta

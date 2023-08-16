@@ -280,7 +280,6 @@ aggiunta
 aggiunta
 aggiunta
 non demolita
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -316,7 +315,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -1442,7 +1440,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -1589,7 +1586,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 rottamata
@@ -1599,7 +1595,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -2434,9 +2429,9 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 non rottamata
+aggiunta
 aggiunta
 aggiunta
 aggiunta
@@ -5634,7 +5629,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -5962,7 +5956,6 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-non rottamata
 aggiunta
 aggiunta
 nessun percorso

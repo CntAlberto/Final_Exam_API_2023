@@ -1397,7 +1397,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -3101,7 +3100,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 rottamata
 aggiunta
 aggiunta
@@ -3134,7 +3132,6 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -3929,7 +3926,6 @@ demolita
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -4243,6 +4239,7 @@ non aggiunta
 aggiunta
 aggiunta
 demolita
+aggiunta
 aggiunta
 aggiunta
 aggiunta
@@ -6916,7 +6913,6 @@ nessun percorso
 aggiunta
 aggiunta
 aggiunta
-non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -7077,7 +7073,6 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-non rottamata
 aggiunta
 rottamata
 aggiunta

@@ -13,7 +13,6 @@ struct station {
     struct station *father;
 };
 typedef struct station Station;
-Station *nullStation;
 Station *highway;
 int maxAuto = 0;
 
@@ -114,7 +113,7 @@ Station *searchStation(Station *firstStation, int distanceToFind) {
 
 Station *predecessorStation(int distance) {
     Station *predecessor = NULL;
-    while (highway != nullStation) {
+    while (highway != NULL) {
         if (highway->distance < distance) {
             predecessor = highway;
             highway = highway->right;
@@ -198,15 +197,15 @@ void removeAutoAtDistance() {
         printf("non rottamata\n");
         return;
     }
-    stationToFind->maxNumberOfCars--;
-    for (i = 0; i < 512; i++) {
+    for (i = 0; i < stationToFind->maxNumberOfCars; i++) {
         if (stationToFind->cars[i] == carToRemove) {
             stationToFind->cars[i] = 0;
             printf("rottamata\n");
-            break;
+            return;
         }
+
     }
-    if (i == 512)printf("non rottamata\n");
+    printf("non rottamata\n");
 }
 
 void planTheTrip() {
@@ -250,14 +249,8 @@ void planTheTrip() {
 
 //----------------------------------------------------------------------------Main Functions-----------------------------------------------------------------------------//
 int main() {
-    nullStation = (Station *) malloc(sizeof(Station));
-    nullStation->distance = -1;
-    nullStation->right = NULL;
-    nullStation->left = NULL;
-    nullStation->maxNumberOfCars = 0;
-    nullStation->father = NULL;
     highway = (Station *) malloc(sizeof(Station));
-    highway = nullStation;
+    highway = NULL;
 /*
     int vetoreDiMacchine1[9] = {5, 4, 5, 5, 4, 6, 5, 4, 5};
     Station *station1 = createStation(91, 9, vetoreDiMacchine1);
@@ -302,7 +295,6 @@ int main() {
     }
 
     //   clearUp(highway);
-    //   free(nullStation);
     //   free(highway);
     return 0;
 }
