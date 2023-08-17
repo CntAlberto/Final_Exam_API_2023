@@ -1215,7 +1215,7 @@ aggiunta
 rottamata
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta

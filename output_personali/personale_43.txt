@@ -725,7 +725,7 @@ aggiunta
 non rottamata
 aggiunta
 aggiunta
-non rottamata
+rottamata
 rottamata
 aggiunta
 aggiunta

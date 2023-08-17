@@ -1,4 +1,5 @@
 aggiunta
+non rottamata
 aggiunta
 rottamata
 non aggiunta
@@ -1637,6 +1638,7 @@ nessun percorso
 aggiunta
 aggiunta
 aggiunta
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -1866,7 +1868,7 @@ demolita
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -3710,6 +3712,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -3875,6 +3878,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 rottamata
 aggiunta
 aggiunta
@@ -5086,6 +5090,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -5619,6 +5624,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+rottamata
 demolita
 aggiunta
 aggiunta
@@ -5912,6 +5918,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+rottamata
 rottamata
 aggiunta
 rottamata
@@ -10906,6 +10913,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 aggiunta
 aggiunta
 rottamata
@@ -11267,10 +11275,11 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 rottamata
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -11389,6 +11398,7 @@ aggiunta
 non rottamata
 aggiunta
 demolita
+non rottamata
 rottamata
 aggiunta
 aggiunta
@@ -15044,6 +15054,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 aggiunta
 aggiunta
 rottamata
@@ -16519,6 +16530,7 @@ aggiunta
 non aggiunta
 aggiunta
 aggiunta
+non rottamata
 demolita
 aggiunta
 aggiunta
@@ -16727,6 +16739,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+non rottamata
 aggiunta
 aggiunta
 non demolita
@@ -18118,6 +18131,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
+non rottamata
 aggiunta
 rottamata
 aggiunta
