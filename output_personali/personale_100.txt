@@ -1060,7 +1060,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -2385,7 +2385,7 @@ aggiunta
 aggiunta
 aggiunta
 non rottamata
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta

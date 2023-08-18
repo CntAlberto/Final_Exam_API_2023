@@ -1000,7 +1000,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -1197,7 +1197,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-non aggiunta
+aggiunta
 aggiunta
 aggiunta
 aggiunta
@@ -1211,7 +1211,7 @@ demolita
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 nessun percorso
 non rottamata
@@ -1318,7 +1318,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 rottamata
 aggiunta
 aggiunta
@@ -2244,7 +2244,7 @@ demolita
 demolita
 rottamata
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -9378,7 +9378,7 @@ aggiunta
 aggiunta
 nessun percorso
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta

@@ -35,9 +35,10 @@ Station *createStation(long distanceToInsert, long numberOfCarsToInsert, long ca
     return newStation;
 }
 
-long insertNewStation(Station *firstStation, Station *stationToInsert) {
-    struct station *currentStation = NULL;
-    struct station *rootStation = firstStation;
+void insertNewStation(Station *stationToInsert) {
+    Station *rootStation = highway;
+    Station *currentStation = NULL;
+
 
     while (rootStation != NULL) {
         currentStation = rootStation;
@@ -45,24 +46,23 @@ long insertNewStation(Station *firstStation, Station *stationToInsert) {
             rootStation = rootStation->left;
         } else if (stationToInsert->distance > rootStation->distance) {
             rootStation = rootStation->right;
-        } else{
+        } else {
             printf("non aggiunta\n");
-            return 0;
+            return;
         }
     }
     stationToInsert->father = currentStation;
     if (currentStation == NULL) {
         highway = stationToInsert;
         printf("aggiunta\n");
-        return 1;
+        return;
     } else if (stationToInsert->distance < currentStation->distance) {
         currentStation->left = stationToInsert;
         printf("aggiunta\n");
-        return 1;
-    } else{
+        return;
+    } else {
         currentStation->right = stationToInsert;
         printf("aggiunta\n");
-        return 1;
     }
 }
 
@@ -82,19 +82,6 @@ Station *minimumStation(Station *currentStation) {
     return currentStation;
 }
 
-/*Station *searchStation(Station *firstStation, long distanceToFind) {
-    if (firstStation == NULL) {
-        return NULL;
-    }
-    if (distanceToFind == firstStation->distance) {
-        return firstStation;
-    }else if (distanceToFind < firstStation->distance) {
-        return searchStation(firstStation->left, distanceToFind);
-    } else if(distanceToFind > firstStation->distance){
-        return searchStation(firstStation->right, distanceToFind);
-    }else return NULL;
-}*/
-
 Station *searchStation(Station *firstStation, long distanceToFind) {
     while (firstStation != NULL) {
         if (firstStation->distance == distanceToFind)return firstStation;
@@ -104,9 +91,9 @@ Station *searchStation(Station *firstStation, long distanceToFind) {
     return firstStation;
 }
 
-void transplant(Station *firstStation, Station *firstStationToTransplant, Station *secondStationToTransplant) {
+void transplant(Station *firstStationToTransplant, Station *secondStationToTransplant) {
     if (firstStationToTransplant->father == NULL)
-        firstStation = secondStationToTransplant;
+        highway = secondStationToTransplant;
     else if (firstStationToTransplant == firstStationToTransplant->father->left)
         firstStationToTransplant->father->left = secondStationToTransplant;
     else
@@ -124,17 +111,17 @@ Station *removeStation(Station *firstStation, long distanceToRemove) {
         return firstStation;
     }
     if (stationToRemove->left == NULL) {
-        transplant(firstStation, stationToRemove, stationToRemove->right);
+        transplant(stationToRemove, stationToRemove->right);
     } else if (stationToRemove->right == NULL) {
-        transplant(firstStation, stationToRemove, stationToRemove->left);
+        transplant(stationToRemove, stationToRemove->left);
     } else {
         Station *successor = minimumStation(stationToRemove->right);
         if (successor != stationToRemove->right) {
-            transplant(firstStation, successor, successor->right);
+            transplant(successor, successor->right);
             successor->right = stationToRemove->right;
             successor->right->father = successor;
         }
-        transplant(firstStation, stationToRemove, successor);
+        transplant(stationToRemove, successor);
         successor->left = stationToRemove->left;
         successor->left->father = successor;
         printf("demolita\n");
@@ -210,7 +197,7 @@ void addStation() {
         nullVectorOfCar[0] = 0;
         station = createStation(insertingDistance, 0, nullVectorOfCar);
     }
-    insertNewStation(highway, station);
+    insertNewStation(station);
 }
 
 void removeStationAtDistance() {
@@ -314,34 +301,6 @@ void planTheTrip() {
 int main() {
     highway = (Station *) malloc(sizeof(Station));
     highway = NULL;
-/*
-    long vetoreDiMacchine1[11] = {41, 34, 35, 42, 42, 37, 37, 34, 43, 33, 36};
-    Station *station1 = createStation(337, 11, vetoreDiMacchine1);
-    insertNewStation(highway, station1);
-
-    long vetoreDiMacchine2[14] = {62, 53, 64, 51, 59, 64, 54, 61, 59, 64, 51, 56, 55, 49};
-    Station *station2 = createStation(4, 14, vetoreDiMacchine2);
-    insertNewStation(highway, station2);
-
-    long vetoreDiMacchine3[11] = {41, 41, 41, 42, 46, 46, 46, 46, 35, 44, 47};
-    Station *station3 = createStation(258, 11, vetoreDiMacchine3);
-    insertNewStation(highway, station3);
-
-    long vetoreDiMacchine4[14] = {459, 69, 66, 62, 64, 70, 57, 62, 67, 65, 69, 70, 55, 58};
-    Station *station4 = createStation(1063, 11, vetoreDiMacchine4);
-    insertNewStation(highway, station4);
-
-    long vetoreDiMacchine5[16] = {25, 24, 27, 23, 22, 26, 27, 22, 25, 23, 24, 27, 23, 21, 28, 26};
-    Station *station5 = createStation(1600, 11, vetoreDiMacchine5);
-    insertNewStation(highway, station5);
-
-    long vetoreDiMacchine6[11] = {38, 32, 31, 29, 35, 30, 38, 36, 29, 35, 33};
-    Station *station6 = createStation(497, 11, vetoreDiMacchine6);
-    insertNewStation(highway, station6);
-
-    removeStation(highway, 337);
-    removeStation(highway, 647);
-*/
 
     char command[20];
 
@@ -356,8 +315,8 @@ int main() {
 
     }
 
-    //   clearUp(highway);
-    //   free(highway);
+    //clearUp(highway);
+    //free(highway);
 
 
 }
