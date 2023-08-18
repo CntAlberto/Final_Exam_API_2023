@@ -54369,7 +54369,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-non rottamata
+rottamata
 rottamata
 demolita
 aggiunta
@@ -72118,7 +72118,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 demolita
 aggiunta
@@ -77357,7 +77357,7 @@ demolita
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta
@@ -81729,7 +81729,7 @@ aggiunta
 aggiunta
 non rottamata
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 rottamata
@@ -87777,7 +87777,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-non rottamata
+rottamata
 non aggiunta
 aggiunta
 aggiunta

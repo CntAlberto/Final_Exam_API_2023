@@ -15418,7 +15418,7 @@ rottamata
 aggiunta
 demolita
 rottamata
-non rottamata
+rottamata
 non rottamata
 demolita
 aggiunta

@@ -247,8 +247,8 @@ void removeAutoAtDistance() {
         if (stationToFind->cars[i] == carToRemove) {
             stationToFind->cars[i] = 0;
             printf("rottamata\n");
-            stationToFind->maxNumberOfCars--;
             qsort(stationToFind->cars, stationToFind->maxNumberOfCars, sizeof(long), compare);
+            stationToFind->maxNumberOfCars--;
             return;
         }
 

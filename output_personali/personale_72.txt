@@ -6588,7 +6588,7 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 aggiunta
 aggiunta
 aggiunta

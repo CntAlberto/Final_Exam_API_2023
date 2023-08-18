@@ -15612,7 +15612,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-non rottamata
+rottamata
 demolita
 aggiunta
 aggiunta

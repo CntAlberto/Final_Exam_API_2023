@@ -2541,7 +2541,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-non rottamata
+rottamata
 non aggiunta
 demolita
 aggiunta

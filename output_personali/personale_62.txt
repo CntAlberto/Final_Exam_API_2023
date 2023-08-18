@@ -6960,7 +6960,7 @@ aggiunta
 aggiunta
 non rottamata
 aggiunta
-non rottamata
+rottamata
 aggiunta
 demolita
 aggiunta
