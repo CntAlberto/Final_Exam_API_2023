@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <limits.h>
 
 
 struct station {
@@ -15,6 +16,24 @@ struct station {
 typedef struct station Station;
 Station *highway;
 long maxAuto = 0;
+long numberOfStations = 0;
+
+int compare(const void *firstCarToCompare, const void *secondCarToCompare) {
+    long firstOrderingCar = *((long *) firstCarToCompare);
+    long secondOrderingCar = *((long *) secondCarToCompare);
+
+    if (firstOrderingCar == 0)
+        return 1;
+    if (secondOrderingCar == 0)
+        return -1;
+
+    if (firstOrderingCar == secondOrderingCar)
+        return 0;
+    else if (firstOrderingCar < secondOrderingCar)
+        return -1;
+    else
+        return 1;
+}
 
 Station *createStation(long distanceToInsert, long numberOfCarsToInsert, long carsToInsert[]) {
     long i;
@@ -32,6 +51,7 @@ Station *createStation(long distanceToInsert, long numberOfCarsToInsert, long ca
     for (i = 0; i < numberOfCarsToInsert; i++) {
         newStation->cars[i] = carsToInsert[i];
     }
+    qsort(newStation->cars, newStation->maxNumberOfCars, sizeof(long), compare);
     return newStation;
 }
 
@@ -68,7 +88,7 @@ void insertNewStation(Station *stationToInsert) {
 
 
 void clearUp(Station *firstStation) {
-    if (highway != NULL) {
+    if (firstStation != NULL) {
         clearUp(firstStation->left);
         clearUp(firstStation->right);
         free(highway);
@@ -132,15 +152,33 @@ Station *removeStation(Station *firstStation, long distanceToRemove) {
 }
 
 
-Station *predecessorStation(long distance) {
-    Station *predecessor = NULL;
-    while (highway != NULL) {
-        if (highway->distance < distance) {
-            predecessor = highway;
-            highway = highway->right;
-        } else highway = highway->left;
+Station *successorStation(Station *currentStation) {
+    Station *successor = NULL;
+    if (currentStation->right != NULL) {
+        return minimumStation(currentStation->right);
+    } else {
+        successor = currentStation->father;
+        while (successor != NULL && currentStation == successor->right) {
+            currentStation = successor;
+            successor = successor->father;
+        }
+        return successor;
     }
-    return predecessor;
+
+}
+
+Station *predecessorStation(Station *currentStation) {
+    Station *predecessor = NULL;
+    if (currentStation->left != NULL) {
+        return minimumStation(currentStation->left);
+    } else {
+        predecessor = currentStation->father;
+        while (predecessor != NULL && currentStation == predecessor->left) {
+            currentStation = predecessor;
+            predecessor = predecessor->father;
+        }
+        return predecessor;
+    }
 }
 
 void findMaxAuto(Station *firstStation) {
@@ -154,28 +192,23 @@ void findMaxAuto(Station *firstStation) {
 }
 
 long findActualMaxAuto(Station *stationToFindMaxAuto) {
-    long actualMaxAuto = 0;
-    for (long i = 0; i < stationToFindMaxAuto->maxNumberOfCars; i++) {
-        if (stationToFindMaxAuto->cars[i] > actualMaxAuto)actualMaxAuto = stationToFindMaxAuto->cars[i];
-    }
+    long actualMaxAuto = stationToFindMaxAuto->cars[stationToFindMaxAuto->maxNumberOfCars - 1];
     return actualMaxAuto;
 }
 
-int compare(const void *firstCarToCompare, const void *secondCarToCompare) {
-    long firstOrderingCar = *((long *) firstCarToCompare);
-    long secondOrderingCar = *((long *) secondCarToCompare);
-
-    if (firstOrderingCar == 0)
-        return 1;
-    if (secondOrderingCar == 0)
-        return -1;
-
-    if (firstOrderingCar == secondOrderingCar)
-        return 0;
-    else if (firstOrderingCar < secondOrderingCar)
-        return -1;
-    else
-        return 1;
+void countStations(Station *stationOfLeaving, Station *stationOfArrival) {
+    numberOfStations = 0;
+    if (stationOfLeaving->distance < stationOfArrival->distance) {
+        while (stationOfLeaving != stationOfArrival) {
+            numberOfStations++;
+            stationOfLeaving = successorStation(stationOfLeaving);
+        }
+    } else if (stationOfLeaving->distance > stationOfArrival->distance) {
+        while (stationOfArrival != stationOfLeaving) {
+            numberOfStations++;
+            stationOfLeaving = predecessorStation(stationOfLeaving);
+        }
+    }
 }
 
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
@@ -207,7 +240,7 @@ void removeStationAtDistance() {
 }
 
 void addAutoAtDistance() {
-    long distanceOfTheStation, carToInsert, i, addedCar = 0;
+    long distanceOfTheStation, carToInsert, addedCar = 0;
     if (scanf("%ld", &distanceOfTheStation) == 0) return;
     fflush(stdin);
     if (scanf("%ld", &carToInsert) == 0) return;
@@ -218,13 +251,10 @@ void addAutoAtDistance() {
         return;
     }
     stationToFind->maxNumberOfCars++;
-    for (i = 0; i < stationToFind->maxNumberOfCars; i++) {
-        if (stationToFind->cars[i] == 0) {
-            stationToFind->cars[i] = carToInsert;
-            qsort(stationToFind->cars, stationToFind->maxNumberOfCars, sizeof(long), compare);
-            addedCar = 1;
-            break;
-        }
+    if (stationToFind->cars[stationToFind->maxNumberOfCars - 1] == 0) {
+        stationToFind->cars[stationToFind->maxNumberOfCars - 1] = carToInsert;
+        addedCar = 1;
+        qsort(stationToFind->cars, stationToFind->maxNumberOfCars, sizeof(long), compare);
     }
     if (addedCar == 1)printf("aggiunta\n");
     else printf("non aggiunta\n");
@@ -262,8 +292,8 @@ void planTheTrip() {
     if (scanf("%ld", &distanceOfArrival) == 0) return;
     Station *leavingStation = searchStation(highway, distanceOfLeaving);
     Station *arrivalStation = searchStation(highway, distanceOfArrival);
-    //  Station *predecessor, *checkpointStation;
-    //long actualAuto;
+    Station *successor;
+    long actualAuto, i;
     if (leavingStation == NULL) {
         printf("nessun percorso\n");
         return;
@@ -272,29 +302,64 @@ void planTheTrip() {
         printf("nessun percorso\n");
         return;
     }
-    //findMaxAuto(highway);
     if (distanceOfLeaving > distanceOfArrival) {
-        //TODO usare dijkstra
+
+
         printf("nessun percorso\n");
     } else if (distanceOfLeaving < distanceOfArrival) {
-        /*   predecessor = predecessorStation(arrivalStation->distance);
-           checkpointStation = arrivalStation;
-           while (predecessor != leavingStation) {
-               actualAuto = findActualMaxAuto(predecessor);
-               if ((predecessor->distance + maxAuto) >= checkpointStation->distance) {
-                   if ((predecessor->distance + actualAuto) >= checkpointStation->distance) {
-                       predecessor = predecessorStation(predecessor->distance);
-                   } else {
-                       checkpointStation = predecessor;
-                       printf("%ld ", checkpointStation->distance);
-                   }
-               } else printf("nessun percorso");
-           }
-           printf("\n");
-           */
-        printf("nessun percorso\n");
+        countStations(leavingStation, arrivalStation);
+        Station **stations = (Station **) malloc(numberOfStations * sizeof(Station));
+        Station **predecessors = (Station **) malloc(numberOfStations * sizeof(Station));
+        Station **carChanges = (Station **) malloc(numberOfStations * sizeof(Station));
+        long *distances = malloc(numberOfStations * sizeof(long));
+        long *positions = malloc(numberOfStations * sizeof(long));
+        long calculatedDistance;
+        for (i = 0; i < numberOfStations; i++) {
+            stations[i] = leavingStation;
+            leavingStation = successorStation(leavingStation);
+            positions[i]=-1;
+        }
+        for (i = 0; i < numberOfStations; i++) {
+            if (i == 0)distances[i] = 0;
+            else distances[i] = INT_MAX;
+            predecessors[i]=NULL;
+        }
+        for (i=0;i<numberOfStations;i++) {
+            actualAuto= findActualMaxAuto(stations[i]);
+            successor= successorStation(stations[i]);
+            long j=i;
+            while(stations[i]->distance + actualAuto >= successor->distance){
+                calculatedDistance=distances[i]+1;
+                if(distances[j]>calculatedDistance){
+                    distances[j]=calculatedDistance;
+                    predecessors[j]=stations[i];
+                    positions[i]=i;
+                }
+                successor= successorStation(successor);
+                j++;
+            }
+        }
+        for(i=0;i<numberOfStations;i++){
+            if(distances[i]==INT_MAX){
+                printf("nessun percorso\n");
+                return;
+            }
+        }
+        long j=0;
+        for(i=numberOfStations;i>0;i--){
+            if(positions[i]!=-1){
+                while(numberOfStations>=positions[i])arrivalStation= predecessorStation(arrivalStation);
+                carChanges[j]=arrivalStation;
+                j++;
+            }
+        }
+        while(j!=0){
+            printf("%ld ",carChanges[j]->distance);
+            j--;
+        }
     }
 }
+//TODO deep debugging planTrip
 
 
 //----------------------------------------------------------------------------Main Functions-----------------------------------------------------------------------------//
@@ -314,9 +379,7 @@ int main() {
         }
 
     }
-
     //clearUp(highway);
-    //free(highway);
 
 
 }
