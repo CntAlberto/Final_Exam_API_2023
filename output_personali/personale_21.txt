@@ -237,7 +237,7 @@ aggiunta
 aggiunta
 demolita
 non aggiunta
-nessun percorso
+2098 123
 non rottamata
 aggiunta
 aggiunta
@@ -282,9 +282,9 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+233 313 403 493 600 705 824 1094 1520 2003 2328
 aggiunta
-nessun percorso
+2196 123
 aggiunta
 aggiunta
 aggiunta
@@ -449,7 +449,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+89 129 219 313 379 466 573 663 806 1094 1587 2072 2393
 aggiunta
 aggiunta
 aggiunta
@@ -612,5 +612,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+1922 159

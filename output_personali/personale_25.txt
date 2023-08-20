@@ -82,7 +82,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+3065 83
 aggiunta
 aggiunta
 aggiunta
@@ -145,7 +145,7 @@ aggiunta
 aggiunta
 non aggiunta
 aggiunta
-nessun percorso
+228 304 587 938 1340 1541 1685 1779 2059 2434 2720
 aggiunta
 aggiunta
 demolita
@@ -648,5 +648,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+2965 69

@@ -58,7 +58,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+567 31
 aggiunta
 aggiunta
 aggiunta
@@ -693,5 +693,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+669 69

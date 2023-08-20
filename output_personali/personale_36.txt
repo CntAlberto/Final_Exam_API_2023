@@ -273,7 +273,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+4432 994
 aggiunta
 demolita
 rottamata
@@ -421,7 +421,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1374 1793 2452 2892 3426 3948 4278 4434
 aggiunta
 aggiunta
 aggiunta
@@ -540,7 +540,7 @@ aggiunta
 aggiunta
 aggiunta
 non aggiunta
-nessun percorso
+531 994 1793 2452 2892 3426 3948 4201 4398 4502 4593 4654 4668 4711 4728 4750 4765
 aggiunta
 aggiunta
 aggiunta
@@ -844,14 +844,14 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+4717 424
 aggiunta
 aggiunta
 aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+637 974 1722 2406 2872 3408 3948 4278
 aggiunta
 aggiunta
 aggiunta
@@ -1279,7 +1279,7 @@ aggiunta
 aggiunta
 non rottamata
 demolita
-nessun percorso
+4718 660
 aggiunta
 aggiunta
 non aggiunta
@@ -1342,5 +1342,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+473 860 1571 2331 2822 3364 3900 4248

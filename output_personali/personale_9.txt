@@ -57,7 +57,7 @@ aggiunta
 aggiunta
 aggiunta
 non demolita
-nessun percorso
+749 13
 aggiunta
 aggiunta
 aggiunta
@@ -697,7 +697,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+905 58
 aggiunta
 aggiunta
 aggiunta
@@ -733,7 +733,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+814 19
 aggiunta
 aggiunta
 non demolita
@@ -765,5 +765,4 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
-nessun percorso
+811 172

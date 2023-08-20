@@ -515,7 +515,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+717 867 1273 1763 2340 3481 5182 5380 5554 5836 6156
 aggiunta
 aggiunta
 aggiunta
@@ -1086,7 +1086,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
+566 776 1181 1684 2247 3371 5182 5380 5624 5921 6216
 aggiunta
 aggiunta
 aggiunta
@@ -1316,7 +1316,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+6428 6230 5994 5692 5380 5182 5039 4835 4506 3970 2893 1290 776 383 335
 non aggiunta
 aggiunta
 aggiunta
@@ -1767,7 +1767,7 @@ aggiunta
 non demolita
 aggiunta
 aggiunta
-nessun percorso
+6750 6724 6674 6646 6553 6427 6230 5994 5692 5380 5182 4981 4815 4459 3834 2571 1181 712 322
 aggiunta
 aggiunta
 aggiunta
@@ -1888,7 +1888,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+5265 5039 4835 4506 3970 2857 1262 742 437
 aggiunta
 aggiunta
 aggiunta
@@ -1930,7 +1930,7 @@ aggiunta
 aggiunta
 non rottamata
 aggiunta
-nessun percorso
+591 776 1181 1684 2247 3371 5182 5288 5498 5767 6084 6359 6572 6701
 aggiunta
 aggiunta
 aggiunta
@@ -2049,5 +2049,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+6170 5915 5607 5323 5074 4902 4618 4120 3188 1427 886 449

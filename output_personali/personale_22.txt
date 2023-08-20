@@ -341,7 +341,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+357 713 1144 1376 1502 1655 1782 1915 2084 2237 2349 2422
 aggiunta
 aggiunta
 aggiunta
@@ -398,7 +398,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2600 25
 aggiunta
 aggiunta
 non demolita
@@ -622,7 +622,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+518 590 1100 1364 1524 1709 1879 2071 2237 2349 2436 2515 2564 2592 2611
 aggiunta
 aggiunta
 aggiunta
@@ -675,5 +675,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+2592 164

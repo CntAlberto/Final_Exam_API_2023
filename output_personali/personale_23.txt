@@ -14,7 +14,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2311 142
 aggiunta
 aggiunta
 aggiunta
@@ -78,7 +78,7 @@ aggiunta
 aggiunta
 aggiunta
 nessun percorso
-nessun percorso
+2739 142
 aggiunta
 aggiunta
 aggiunta
@@ -318,7 +318,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+250 543 1158 1473 1610 1824 2100 2358 2496 2584 2629 2670
 aggiunta
 aggiunta
 aggiunta
@@ -357,14 +357,14 @@ aggiunta
 aggiunta
 non demolita
 aggiunta
-nessun percorso
+2117 130
 aggiunta
 aggiunta
 aggiunta
 aggiunta
 aggiunta
 demolita
-nessun percorso
+5 79 222 508 1067 1453 1610 1824 2100 2358 2496 2584 2618 2654 2689 2710 2722
 aggiunta
 aggiunta
 aggiunta
@@ -407,7 +407,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2528 303
 aggiunta
 aggiunta
 aggiunta
@@ -563,5 +563,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+2577 116

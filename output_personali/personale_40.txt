@@ -157,7 +157,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+5343 969
 non rottamata
 aggiunta
 aggiunta
@@ -239,7 +239,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+5343 65
 aggiunta
 aggiunta
 aggiunta
@@ -421,7 +421,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
+4699 52
 non aggiunta
 aggiunta
 aggiunta
@@ -954,8 +954,8 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
-nessun percorso
+4603 378
+5092 69
 aggiunta
 aggiunta
 aggiunta
@@ -1178,7 +1178,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+4842 400
 aggiunta
 aggiunta
 aggiunta
@@ -1457,5 +1457,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+5110 251

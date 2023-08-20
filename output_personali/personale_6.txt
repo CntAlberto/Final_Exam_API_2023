@@ -100,7 +100,7 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+585 51
 aggiunta
 aggiunta
 aggiunta
@@ -177,5 +177,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+577 75

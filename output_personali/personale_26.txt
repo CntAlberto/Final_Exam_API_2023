@@ -49,7 +49,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+230 354 534 690 1005 1110 1825 2946
 aggiunta
 aggiunta
 demolita
@@ -492,7 +492,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2834 486
 aggiunta
 aggiunta
 aggiunta
@@ -730,5 +730,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+2530 230

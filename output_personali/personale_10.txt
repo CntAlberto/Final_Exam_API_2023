@@ -36,7 +36,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1025 111
 aggiunta
 aggiunta
 aggiunta
@@ -603,8 +603,8 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
+1025 3
 nessun percorso
-nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -620,7 +620,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+988 62
 aggiunta
 aggiunta
 aggiunta
@@ -739,5 +739,4 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+1058 60

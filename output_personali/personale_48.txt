@@ -145,7 +145,7 @@ rottamata
 aggiunta
 aggiunta
 demolita
-nessun percorso
+5401 4606 3534 2504 1120 725
 aggiunta
 aggiunta
 aggiunta
@@ -646,7 +646,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+5985 5685 5208 4238 3132 1956 511
 aggiunta
 aggiunta
 aggiunta
@@ -753,7 +753,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+42 222 946 2158 3685 4754 5821 6232 6416
 aggiunta
 aggiunta
 aggiunta
@@ -805,7 +805,7 @@ aggiunta
 aggiunta
 non aggiunta
 aggiunta
-nessun percorso
+821 1123 2560 3931 4971 5996 6314 6448
 aggiunta
 aggiunta
 aggiunta
@@ -1607,7 +1607,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+6314 6167 5953 5633 5061 4065 2992 1815 401
 aggiunta
 aggiunta
 aggiunta
@@ -1689,7 +1689,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+6477 6395 6292 6160 5938 5581 4971 3946 2848 1555 946
 aggiunta
 aggiunta
 aggiunta
@@ -1925,5 +1925,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
 nessun percorso
