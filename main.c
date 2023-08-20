@@ -209,6 +209,7 @@ void countStations(Station *stationOfLeaving, Station *stationOfArrival) {
             stationOfLeaving = predecessorStation(stationOfLeaving);
         }
     }
+    numberOfStations++;
 }
 
 //--------------------------------------------------------------------------Requested Functions--------------------------------------------------------------------------//
@@ -217,11 +218,14 @@ void addStation() {
     long insertingDistance;
     Station *station;
     if (scanf("%ld", &insertingDistance) == 0) return;
+    if(feof(stdin)==true)return;
     if (scanf("%ld", &numberOfCars) == 0) return;
+    if(feof(stdin)==true)return;
     if (numberOfCars > 0) {
         long *car = (long *) malloc(numberOfCars * sizeof(long));
         for (long i = 0; i < numberOfCars; i++) {
             if (scanf("%ld", &car[i]) == 0) return;
+            if(feof(stdin)==true)return;
         }
         qsort(car, numberOfCars, sizeof(long), compare);
         station = createStation(insertingDistance, numberOfCars, car);
@@ -236,14 +240,17 @@ void addStation() {
 void removeStationAtDistance() {
     long removingDistance;
     if (scanf("%ld", &removingDistance) == 0) return;
+    if(feof(stdin)==true)return;
     removeStation(highway, removingDistance);
 }
 
 void addAutoAtDistance() {
     long distanceOfTheStation, carToInsert, addedCar = 0;
     if (scanf("%ld", &distanceOfTheStation) == 0) return;
+    if(feof(stdin)==true)return;
     fflush(stdin);
     if (scanf("%ld", &carToInsert) == 0) return;
+    if(feof(stdin)==true)return;
     fflush(stdin);
     Station *stationToFind = searchStation(highway, distanceOfTheStation);
     if (stationToFind == NULL) {
@@ -263,8 +270,10 @@ void addAutoAtDistance() {
 void removeAutoAtDistance() {
     long distanceOfTheStation, carToRemove, i;
     if (scanf("%ld", &distanceOfTheStation) == 0) return;
+    if(feof(stdin)==true)return;
     fflush(stdin);
     if (scanf("%ld", &carToRemove) == 0) return;
+    if(feof(stdin)==true)return;
     fflush(stdin);
 
 
@@ -289,7 +298,9 @@ void removeAutoAtDistance() {
 void planTheTrip() {
     long distanceOfLeaving, distanceOfArrival;
     if (scanf("%ld", &distanceOfLeaving) == 0) return;
+    if(feof(stdin)==true)return;
     if (scanf("%ld", &distanceOfArrival) == 0) return;
+    if(feof(stdin)==true)return;
     Station *leavingStation = searchStation(highway, distanceOfLeaving);
     Station *arrivalStation = searchStation(highway, distanceOfArrival);
     Station *successor;
@@ -308,58 +319,56 @@ void planTheTrip() {
         printf("nessun percorso\n");
     } else if (distanceOfLeaving < distanceOfArrival) {
         countStations(leavingStation, arrivalStation);
-        Station **stations = (Station **) malloc(numberOfStations * sizeof(Station));
-        Station **predecessors = (Station **) malloc(numberOfStations * sizeof(Station));
-        Station **carChanges = (Station **) malloc(numberOfStations * sizeof(Station));
-        long *distances = malloc(numberOfStations * sizeof(long));
-        long *positions = malloc(numberOfStations * sizeof(long));
-        long calculatedDistance;
+        Station *stations[numberOfStations]; // = (Station **) malloc(numberOfStations * sizeof(Station));
+        Station *checkPoints[numberOfStations];  // = (Station **) malloc(numberOfStations * sizeof(Station));
+        long distances[numberOfStations]; // = malloc(numberOfStations * sizeof(long));
+        long positions[numberOfStations]; // = malloc(numberOfStations * sizeof(long));
+        long calculatedDistance, j;
         for (i = 0; i < numberOfStations; i++) {
             stations[i] = leavingStation;
             leavingStation = successorStation(leavingStation);
-            positions[i]=-1;
+            positions[i] = -1;
+            checkPoints[i] = NULL;
         }
         for (i = 0; i < numberOfStations; i++) {
             if (i == 0)distances[i] = 0;
             else distances[i] = INT_MAX;
-            predecessors[i]=NULL;
         }
-        for (i=0;i<numberOfStations;i++) {
-            actualAuto= findActualMaxAuto(stations[i]);
-            successor= successorStation(stations[i]);
-            long j=i;
-            while(stations[i]->distance + actualAuto >= successor->distance){
-                calculatedDistance=distances[i]+1;
-                if(distances[j]>calculatedDistance){
-                    distances[j]=calculatedDistance;
-                    predecessors[j]=stations[i];
-                    positions[i]=i;
+        for (i = 0; i < numberOfStations; i++) {
+            actualAuto = findActualMaxAuto(stations[i]);
+            successor = successorStation(stations[i]);
+            if (successor == NULL)break;
+            j = i + 1;
+            while (stations[i]->distance + actualAuto >= successor->distance) {
+                calculatedDistance = distances[i] + 1;
+                if (distances[j] > calculatedDistance) {
+                    distances[j] = calculatedDistance;
+                    positions[j] = i;
                 }
-                successor= successorStation(successor);
+                successor = successorStation(successor);
+                if (successor == NULL)break;
                 j++;
             }
         }
-        for(i=0;i<numberOfStations;i++){
-            if(distances[i]==INT_MAX){
-                printf("nessun percorso\n");
-                return;
-            }
+        if (distances[numberOfStations - 1] == INT_MAX) {
+            printf("nessun percorso\n");
+            return;
         }
-        long j=0;
-        for(i=numberOfStations;i>0;i--){
-            if(positions[i]!=-1){
-                while(numberOfStations>=positions[i])arrivalStation= predecessorStation(arrivalStation);
-                carChanges[j]=arrivalStation;
-                j++;
-            }
+        i=numberOfStations-1;
+        j=0;
+        while(i>=0){
+            checkPoints[j]=stations[i];
+            i=positions[i];
+            j++;
         }
-        while(j!=0){
-            printf("%ld ",carChanges[j]->distance);
+        j--;
+        while(j>0){
+           if(checkPoints[j]!=NULL) printf("%ld ", checkPoints[j]->distance);
             j--;
         }
+        printf("%ld", checkPoints[0]->distance);
     }
 }
-//TODO deep debugging planTrip
 
 
 //----------------------------------------------------------------------------Main Functions-----------------------------------------------------------------------------//
@@ -376,6 +385,7 @@ int main() {
             else if (strcmp(command, "aggiungi-auto") == 0) addAutoAtDistance();
             else if (strcmp(command, "rottama-auto") == 0) removeAutoAtDistance();
             else if (strcmp(command, "pianifica-percorso") == 0) planTheTrip();
+            else if (feof(stdin) == false) return 0;
         }
 
     }
