@@ -1062,7 +1062,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+443 1585 3036 6162 8255 11626
 aggiunta
 aggiunta
 aggiunta
@@ -1236,7 +1236,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+11726 11416 11120 10118 8255 5002 2548 98
 aggiunta
 aggiunta
 aggiunta
@@ -1478,7 +1478,7 @@ aggiunta
 aggiunta
 aggiunta
 non aggiunta
-nessun percorso
+398 746 2256 5090 7663 11127
 aggiunta
 aggiunta
 aggiunta
@@ -2254,7 +2254,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+398 1253 2841 6005 8194 11726
 aggiunta
 aggiunta
 aggiunta
@@ -2291,7 +2291,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+398 625 1987 4604 7308 10623
 aggiunta
 aggiunta
 aggiunta
@@ -2383,7 +2383,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+1585 1987 4604 7308 10619
 aggiunta
 non rottamata
 aggiunta
@@ -3310,7 +3310,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+70 824 2431 5313 7785 11299
 aggiunta
 aggiunta
 aggiunta
@@ -3560,7 +3560,7 @@ non demolita
 demolita
 aggiunta
 aggiunta
-nessun percorso
+9528 6813 3898 1603
 demolita
 aggiunta
 aggiunta
@@ -3621,7 +3621,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+1320 1847 4309 7118 10309
 aggiunta
 aggiunta
 aggiunta
@@ -4576,7 +4576,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+499 938 2617 5611 8014 11485
 aggiunta
 aggiunta
 aggiunta
@@ -4649,7 +4649,7 @@ demolita
 rottamata
 aggiunta
 non rottamata
-nessun percorso
+10623 9089 5785 3528 547
 aggiunta
 aggiunta
 aggiunta
@@ -8239,7 +8239,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+10549 8897 5431 2955 2532
 aggiunta
 aggiunta
 aggiunta
@@ -8821,7 +8821,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+11616 11187 10288 8327 4771 2117 1984
 demolita
 aggiunta
 aggiunta
@@ -9304,7 +9304,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+10759 9383 6414 3898 895 457
 demolita
 aggiunta
 aggiunta
@@ -9318,7 +9318,7 @@ aggiunta
 rottamata
 aggiunta
 aggiunta
-nessun percorso
+11965 11940 11885 11798 11616 11187 10288 8327 4771 2117 457
 aggiunta
 aggiunta
 rottamata
@@ -10262,7 +10262,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+873 2021 4649 7408 10788
 aggiunta
 aggiunta
 aggiunta
@@ -11074,7 +11074,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+11344 10596 8989 5537 3103 179
 aggiunta
 aggiunta
 aggiunta
@@ -11475,7 +11475,7 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1368 2256 5062 7656 11120
 aggiunta
 aggiunta
 aggiunta
@@ -14241,5 +14241,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+11329 10596 8989 5537 3103 1590

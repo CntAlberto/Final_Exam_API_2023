@@ -6061,7 +6061,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+783 921 1100 1298 1532 1816 2120 2410 2678 3003 3417 4172 5656 8049 10280
 non aggiunta
 aggiunta
 aggiunta
@@ -7664,7 +7664,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+520 681 907 1100 1298 1532 1814 2120 2439 2755 3077 3492 4413 6097 8562 10639 11124 11343 11481
 aggiunta
 non rottamata
 aggiunta
@@ -8976,7 +8976,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1659 1754 2040 2345 2667 2995 3326 4026 5426 7733 10072
 aggiunta
 aggiunta
 aggiunta
@@ -9546,7 +9546,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+1114 1382 1648 1922 2212 2527 2856 3155 3711 4805 6738 9230
 aggiunta
 non rottamata
 non rottamata
@@ -10457,7 +10457,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+11180 10985 10695 10237 9506 8186 6007 3516 2575 2254 1933 1792
 aggiunta
 aggiunta
 aggiunta
@@ -11272,7 +11272,7 @@ aggiunta
 aggiunta
 non rottamata
 aggiunta
-nessun percorso
+10605 10125 9302 7867 5565 3279 2575 2254 1933 1644 1382 1100 841 598 365 176
 aggiunta
 aggiunta
 aggiunta
@@ -11374,5 +11374,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+11576 11521 11450 11404 11294 11131 10912 10576 10046 9181 7588 5256 3098 2575 2254 1933 1644 1382 1100 841 598 365 325

@@ -27,7 +27,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-296 5
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -53,4 +53,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-263 5
+263 249 226 216 198 179 161 117 84 63 62 12 5

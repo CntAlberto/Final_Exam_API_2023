@@ -642,7 +642,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+196 309 894 1367 1676 2242 2862 3738 4695 5594 6778 8281
 aggiunta
 aggiunta
 aggiunta
@@ -1587,8 +1587,8 @@ aggiunta
 rottamata
 aggiunta
 demolita
-nessun percorso
-nessun percorso
+196 309 894 1367 1676 2436 3190 4055 5034 6013 7437 9234 9774
+9726 9627 9317 8833 8028 6421 5034 4055 3190 2280 1676 894 309
 aggiunta
 aggiunta
 aggiunta
@@ -2782,7 +2782,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+9895 9726 9525 9175 8650 7633 5833 4490 3738
 aggiunta
 aggiunta
 aggiunta
@@ -3032,10 +3032,10 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1367 1546 2280 3102 4002 4969 5890 7285 9081 9734
 aggiunta
 demolita
-nessun percorso
+1676 2436 3190 4055 5034 6013 7437 9234 9772
 aggiunta
 aggiunta
 nessun percorso
@@ -3231,7 +3231,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8973 8252 6819 5066 4098 3190 2280 1722
 aggiunta
 aggiunta
 aggiunta
@@ -3246,7 +3246,7 @@ aggiunta
 non rottamata
 non aggiunta
 aggiunta
-nessun percorso
+547 1028 1676 2436 3190 4055 5034 6013 7432 9234 9774
 aggiunta
 aggiunta
 aggiunta
@@ -5273,8 +5273,8 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
-nessun percorso
+9602 9300 8794 7931 6138 4611 3614 2773 1941 1142 1061
+8987 8252 6819 5066 4098 3154 2242 1451 782 568
 rottamata
 aggiunta
 aggiunta
@@ -5622,7 +5622,7 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+9687 9403 8970 8241 6819 5066 4098 3154 2332
 aggiunta
 aggiunta
 aggiunta
@@ -10270,7 +10270,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+9972 9850 9687 9403 8968 8241 6819 5066 4098 3125 2224 1451 742 153
 aggiunta
 aggiunta
 aggiunta
@@ -10876,5 +10876,4 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
-nessun percorso
+10426 10410 10368 10333 10288 10250 10214 10161 10068 9948 9800 9584 9251 8711 7786 6013 4550 3572 2657 2606

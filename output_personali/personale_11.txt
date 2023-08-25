@@ -105,7 +105,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-1104 45
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -181,7 +181,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-1118 125
+nessun percorso
 aggiunta
 aggiunta
 rottamata

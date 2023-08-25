@@ -2638,7 +2638,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+12572 10066 5514 4375
 aggiunta
 aggiunta
 aggiunta
@@ -4306,7 +4306,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+13798 12633 10127 5514 2575 1146 287
 non rottamata
 aggiunta
 aggiunta
@@ -8099,7 +8099,7 @@ aggiunta
 demolita
 rottamata
 aggiunta
-nessun percorso
+338 764 1483 2575 3950 5887 9040 13577
 non rottamata
 aggiunta
 aggiunta
@@ -8236,7 +8236,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+12712 10326 5780 2629 1146 235 118
 demolita
 aggiunta
 aggiunta
@@ -9479,7 +9479,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+557 653 1356 2326 3733 5531 8530 12851
 aggiunta
 non rottamata
 aggiunta
@@ -11082,7 +11082,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+13798 12633 10127 5496 2498 1058 949
 aggiunta
 aggiunta
 aggiunta
@@ -11351,7 +11351,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+13444 11898 8503 4229 2025 1757
 aggiunta
 aggiunta
 aggiunta
@@ -11540,7 +11540,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+820 1450 2517 3995 6033 9286 13891
 aggiunta
 aggiunta
 aggiunta
@@ -14333,7 +14333,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+14383 13798 12633 10127 5496 3037
 aggiunta
 aggiunta
 aggiunta
@@ -15584,7 +15584,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+300 764 1483 2575 4064 6101 9398 14023
 aggiunta
 aggiunta
 aggiunta
@@ -16002,9 +16002,9 @@ aggiunta
 rottamata
 non rottamata
 aggiunta
-nessun percorso
+653 820 1623 2735 4284 6521 9929 14517
 demolita
-nessun percorso
+897 918 1757 2891 4375 6655 10136
 aggiunta
 aggiunta
 aggiunta
@@ -17644,5 +17644,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+14314 13667 12397 9609 4981 2305 918 527

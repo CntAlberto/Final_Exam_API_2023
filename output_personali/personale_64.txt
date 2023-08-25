@@ -1303,7 +1303,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2411 3117 5192 8199 8644 9208
 aggiunta
 aggiunta
 aggiunta
@@ -1962,7 +1962,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+970 1982 3117 5185 8271
 aggiunta
 non aggiunta
 aggiunta
@@ -2807,7 +2807,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+557 970 1769 3117 5185 8199 8644 9208 9903
 aggiunta
 aggiunta
 aggiunta
@@ -4300,7 +4300,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+234 682 1570 2846 4721 7719
 aggiunta
 aggiunta
 aggiunta
@@ -4497,7 +4497,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
+9315 8604 8021 7719 7661 7522 7484 7274 6896 6427 5153 2069 636 448
 aggiunta
 aggiunta
 aggiunta
@@ -4509,7 +4509,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+354 834 1769 3117 5153 8116 8452 8985 9725
 aggiunta
 aggiunta
 aggiunta
@@ -5289,8 +5289,8 @@ aggiunta
 demolita
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+9269 8547 7897 7719 7661 7522 7484 7230 6779 5955 4055 1328 234
+9240 8521 7889 7719 7661 7522 7484 7230 6779 5955 4055 1815
 aggiunta
 aggiunta
 aggiunta
@@ -5345,10 +5345,10 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+327 834 1769 3117 5153 8116 8403 8985 9718
 aggiunta
 aggiunta
-nessun percorso
+9477 8848 8116 7726 7661 7522 7484 7230 6779 5955 4055 1328 662
 rottamata
 non aggiunta
 demolita
@@ -5506,7 +5506,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+581 834 1769 3117 5153 8199 8604 9274 10011 10364
 aggiunta
 aggiunta
 aggiunta
@@ -5558,7 +5558,7 @@ aggiunta
 aggiunta
 demolita
 demolita
-nessun percorso
+1349 1769 3117 5153 8116 8392 8959 9641 10232
 aggiunta
 aggiunta
 aggiunta
@@ -6250,7 +6250,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8644 7973 7719 7661 7522 7484 7230 6779 5955 4055 1311 591
 aggiunta
 aggiunta
 rottamata
@@ -9807,7 +9807,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+10353 10335 10320 10277 10182 9987 9641 9040 8294 7801 7719 7625 7484 7230 6777 5916 3962 1311 936
 aggiunta
 aggiunta
 non aggiunta
@@ -11336,7 +11336,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+9551 8913 8185 7752 7690 7591 7484 7230 6777 5916 3962 1297 962
 aggiunta
 non demolita
 aggiunta
@@ -11433,7 +11433,7 @@ aggiunta
 aggiunta
 aggiunta
 non aggiunta
-nessun percorso
+834 1692 2997 5021 8112 8387 8959 9675
 aggiunta
 aggiunta
 demolita
@@ -11446,5 +11446,4 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+10195 10011 9675 9102 8354 7801 7717 7625 7484 7230 6777 5916 3962 1297 272

@@ -7116,7 +7116,7 @@ non rottamata
 rottamata
 aggiunta
 aggiunta
-nessun percorso
+3580 4658 8484 11041 13391 15620
 aggiunta
 demolita
 aggiunta
@@ -9707,7 +9707,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1660 2937 5663 9216 11473 13930 16161
 aggiunta
 aggiunta
 aggiunta
@@ -10830,7 +10830,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+17277 15889 13779 11496 9045 6753 3747 1084
 aggiunta
 aggiunta
 aggiunta
@@ -11308,7 +11308,7 @@ aggiunta
 non aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1048 2141 4321 7919 10622 13003 15306 17531
 demolita
 rottamata
 non aggiunta
@@ -11366,7 +11366,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1360 2308 4585 8328 10939 13391 15715
 rottamata
 rottamata
 aggiunta
@@ -11630,7 +11630,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+17776 16825 15073 13003 10622 8328 5717 2248 554
 aggiunta
 aggiunta
 aggiunta
@@ -12432,10 +12432,10 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+16968 15306 13089 10798 8351 5753 2248 761
 aggiunta
 aggiunta
-nessun percorso
+2809 3919 7384 10315 12673 15004
 aggiunta
 aggiunta
 aggiunta
@@ -13249,7 +13249,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-nessun percorso
+17665 16465 14544 12314 9868 7567 4699 785 262
 aggiunta
 aggiunta
 aggiunta
@@ -13406,7 +13406,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1765 3076 5965 9384 11622 14094 16302
 aggiunta
 aggiunta
 non aggiunta
@@ -13581,7 +13581,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
+1660 2141 4321 7835 10622 13003 15346 17584
 demolita
 aggiunta
 aggiunta
@@ -17452,7 +17452,7 @@ aggiunta
 rottamata
 aggiunta
 aggiunta
-nessun percorso
+1571 2141 4321 7812 10605 13003 15346 17584
 aggiunta
 aggiunta
 aggiunta
@@ -18528,7 +18528,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+2229 2943 5753 9274 11586 14069 16289 18307
 aggiunta
 aggiunta
 aggiunta
@@ -19840,7 +19840,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+679 1032 2229 4475 8123 10798 13197 15572 17770
 aggiunta
 aggiunta
 aggiunta
@@ -20571,7 +20571,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+18638 18389 17854 16825 15073 12841 10408 8038 5390 1724 1105
 aggiunta
 aggiunta
 demolita
@@ -20730,7 +20730,7 @@ aggiunta
 aggiunta
 aggiunta
 non rottamata
-nessun percorso
+2652 3738 6836 9935 12280 14761 17029 18679
 aggiunta
 aggiunta
 aggiunta
@@ -22613,7 +22613,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1489 2308 4611 8484 11036 13509 15842 17993
 rottamata
 rottamata
 aggiunta
@@ -24238,7 +24238,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+15781 13713 11469 8982 6615 3443 2639
 aggiunta
 demolita
 aggiunta
@@ -26288,7 +26288,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+3004 4498 8264 10867 13311 15623
 demolita
 aggiunta
 aggiunta
@@ -26820,7 +26820,7 @@ rottamata
 non rottamata
 aggiunta
 aggiunta
-nessun percorso
+17403 16077 13983 11766 9276 6985 3898 1993
 aggiunta
 demolita
 aggiunta
@@ -26996,5 +26996,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+1996 2348 4714 8623 11135 13587 15889 18009

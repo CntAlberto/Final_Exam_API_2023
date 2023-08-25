@@ -2259,7 +2259,7 @@ aggiunta
 aggiunta
 aggiunta
 nessun percorso
-nessun percorso
+2034 2445 2780 3314 4116 5314 7596 12488 13305 14059 14296 14729 15007
 aggiunta
 aggiunta
 aggiunta
@@ -2503,7 +2503,7 @@ demolita
 aggiunta
 demolita
 aggiunta
-nessun percorso
+14413 14011 13555 12887 12488 11650 10996 10108 8458 4928 2933
 aggiunta
 aggiunta
 aggiunta
@@ -3494,7 +3494,7 @@ aggiunta
 rottamata
 non aggiunta
 rottamata
-nessun percorso
+169 376 871 1241 1802 2445 3209 4036 4928 7354 12048 12887
 aggiunta
 aggiunta
 aggiunta
@@ -3747,7 +3747,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+169 465 971 1481 1991 2445 3209 4036 4928 7354 12031 12779 13564 14277
 rottamata
 aggiunta
 aggiunta
@@ -3842,7 +3842,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+3209 4036 5031 7595 12451 13299 14011 14521
 aggiunta
 aggiunta
 aggiunta
@@ -7662,7 +7662,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2542 3053 3881 4893 7354 12031 12779 13555 14268 14669
 aggiunta
 aggiunta
 aggiunta
@@ -8113,7 +8113,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+11656 10887 9701 7446 2609 1844 1235 613 564
 aggiunta
 aggiunta
 aggiunta
@@ -8871,7 +8871,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+14938 14886 14677 14360 13917 13299 12573 11881 11065 10076 8251 5416 2269 1523 871 412
 aggiunta
 aggiunta
 aggiunta
@@ -8927,7 +8927,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+376 562 1066 1670 2328 3069 3880 4893 7259 11881 12652 13471 14207 14669
 aggiunta
 aggiunta
 aggiunta
@@ -9449,7 +9449,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+14912 14722 14506 14207 13751 13092 12339 11498 10774 9612 7301 2497 1704 1583
 aggiunta
 aggiunta
 aggiunta
@@ -9564,7 +9564,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+562 1066 1670 2328 3069 3880 4893 7259 11881 12652 13471 14207 14722
 aggiunta
 non rottamata
 aggiunta
@@ -9630,7 +9630,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+376 562 1066 1670 2354 3136 3934 4928 7459 12350
 aggiunta
 aggiunta
 aggiunta
@@ -10658,7 +10658,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+418 562 1066 1643 2328 3069 3880 4893 7239 11957 12766 13555 14255 14735
 aggiunta
 aggiunta
 aggiunta
@@ -10698,7 +10698,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+13917 13299 12537 11707 10895 9809 7655 2707 1902 1226 613 376
 aggiunta
 aggiunta
 aggiunta
@@ -13753,7 +13753,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1241 1643 2328 3069 3880 4890 7239 11957 12766
 aggiunta
 aggiunta
 aggiunta
@@ -13795,7 +13795,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+169 562 1066 1643 2328 3069 3880 4890 7268 12027 12862 13686 14360
 aggiunta
 aggiunta
 aggiunta
@@ -20694,5 +20694,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+1953 2328 3069 3880 4890 7363 12203 13054 13862 14479 14857 15051

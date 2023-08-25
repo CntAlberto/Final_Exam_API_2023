@@ -288,7 +288,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4513 129
+4513 4358 3966 3058 1695 936 487 269 129
 aggiunta
 non aggiunta
 aggiunta
@@ -512,7 +512,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4980 173
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -1006,7 +1006,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4797 486
+4797 4727 4618 4460 4153 3448 1991 1110 630 486
 aggiunta
 aggiunta
 aggiunta
@@ -1353,4 +1353,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4854 486
+4854 4818 4763 4679 4530 4260 3722 2276 1328 768 486

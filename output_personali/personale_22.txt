@@ -398,7 +398,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-2600 25
+nessun percorso
 aggiunta
 aggiunta
 non demolita
@@ -675,4 +675,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-2592 164
+2592 2572 2564 2536 2497 2447 2381 2349 2240 2110 1956 1782 1585 1425 1255 1100 859 464 164

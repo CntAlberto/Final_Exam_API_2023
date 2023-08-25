@@ -29,10 +29,10 @@ if (CMAKE_BUILD_TYPE MATCHES "Debug")
             # opzioni compilatore (con ottimizzazione)
             # "${CMAKE_C_FLAGS} -Wall -Werror -std=gnu11 -O2 -g3 -fsanitize=undefined -fsanitize=address"
             # senza ottimizzazione (consigliato in fase di sviluppo)
-            "${CMAKE_C_FLAGS} -Wall -Werror -std=gnu11 -g3 -fsanitize=undefined -fsanitize=address"
+            "${CMAKE_C_FLAGS} -Wall -Werror -std=gnu11 -g3"# -fsanitize=undefined -fsanitize=address"
     )
     target_link_options(NomeProgetto # usare nome del Progetto
             # opzioni linker
-            BEFORE PUBLIC -lm PUBLIC -fsanitize=undefined PUBLIC -fsanitize=address
+            BEFORE PUBLIC -lm PUBLIC -fsanitize=undefined #PUBLIC -fsanitize=address
             )
 endif ()

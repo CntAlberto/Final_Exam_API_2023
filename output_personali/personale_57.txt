@@ -1401,7 +1401,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1938 2767 3986 5117 6257 7369 7999 8395 8567 8719
 aggiunta
 aggiunta
 aggiunta
@@ -2456,7 +2456,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8149 7773 7269 6613 5608 4428 3222 1938 950 345
 aggiunta
 aggiunta
 aggiunta
@@ -3876,14 +3876,14 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8284 7972 7516 6844 5923 4791 3515 2421 1286 817
 aggiunta
 aggiunta
 aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+860 1286 2123 3222 4508 5734 6944 7827
 aggiunta
 aggiunta
 aggiunta
@@ -3959,7 +3959,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+174 316 633 950 1527 2421 3515 4698 5947 7114
 aggiunta
 aggiunta
 aggiunta
@@ -4349,7 +4349,7 @@ aggiunta
 aggiunta
 aggiunta
 non aggiunta
-nessun percorso
+1430 1643 2544 3767 5067 6318 7393 8149 8549 8714 8790
 aggiunta
 aggiunta
 aggiunta
@@ -4357,7 +4357,7 @@ non rottamata
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+633 950 1643 2544 3767 5067 6318 7393 8149
 aggiunta
 aggiunta
 aggiunta
@@ -4650,7 +4650,7 @@ aggiunta
 aggiunta
 demolita
 aggiunta
-nessun percorso
+779 874 1527 2421 3515 4791 6052 7174 7999
 rottamata
 aggiunta
 aggiunta
@@ -6285,7 +6285,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1558 2500 3698 4973 6257 7355 8123 8528
 aggiunta
 aggiunta
 demolita
@@ -6293,11 +6293,11 @@ non demolita
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+860 902 1558 2500 3698 4973 6257 7355 8123 8528 8714 8790 8813
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+459 874 1527 2442 3654 4951 6208 7335 8106 8519 8699
 aggiunta
 demolita
 aggiunta
@@ -6850,7 +6850,7 @@ aggiunta
 rottamata
 aggiunta
 aggiunta
-nessun percorso
+7432 6758 5778 4588 3362 2085 950 412
 demolita
 aggiunta
 aggiunta
@@ -6884,7 +6884,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8790 8766 8756 8708 8629 8514 8318 8074 7663 7046 6163 5020 3734 2442 1269 428 174
 aggiunta
 aggiunta
 aggiunta
@@ -6913,7 +6913,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8196 7827 7265 6455 5388 4133 2897 1643 724
 aggiunta
 aggiunta
 aggiunta
@@ -7417,7 +7417,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+928 1200 2013 3046 4322 5608 6801 7773
 non aggiunta
 aggiunta
 aggiunta
@@ -8744,7 +8744,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+878 980 1661 2649 3878 5172 6455 7501 8188 8567
 aggiunta
 aggiunta
 aggiunta
@@ -9464,5 +9464,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+8106 7710 7107 6240 5117 3832 2544 1323 459 342

@@ -1206,7 +1206,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+12890 12001 11056 9970 8190 5083 2635 1496
 aggiunta
 non demolita
 aggiunta
@@ -3551,7 +3551,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+12995 12076 11277 10076 8190 5083 4501
 aggiunta
 aggiunta
 aggiunta
@@ -4337,7 +4337,7 @@ aggiunta
 non aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2695 4000 7341 10565 12196 13112 13975 14748 15304
 demolita
 aggiunta
 aggiunta
@@ -5669,11 +5669,11 @@ aggiunta
 demolita
 aggiunta
 aggiunta
-nessun percorso
+13112 12196 11260 9970 8100 5050 1659 480
 aggiunta
-nessun percorso
+476 1719 3837 7072 10357 12056 12987 13903 14707 15304
 aggiunta
-nessun percorso
+41 123 1080 2635 5263 8665 11441 12656 13607 14365 15046
 aggiunta
 aggiunta
 aggiunta
@@ -7183,7 +7183,7 @@ aggiunta
 aggiunta
 demolita
 demolita
-nessun percorso
+518 1719 3837 7072 10357 12056 12928 13859 14686 15239 15646 15805 15929 15996 16034
 aggiunta
 aggiunta
 aggiunta
@@ -9222,12 +9222,12 @@ aggiunta
 non demolita
 aggiunta
 demolita
-nessun percorso
+15409 15125 14686 14080 13313 12400 11441 10235 8429 5489 2106 104
 aggiunta
 aggiunta
-nessun percorso
+1795 2695 5422 8791 11500 12673 13636 14505 15172
 rottamata
-nessun percorso
+3398 3981 7259 10565 12201 13154 14080 14859 15380
 aggiunta
 aggiunta
 aggiunta
@@ -10593,7 +10593,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+14188 13451 12613 11781 10727 9168 6777 3430 438 104
 aggiunta
 aggiunta
 aggiunta
@@ -10913,7 +10913,7 @@ aggiunta
 non rottamata
 aggiunta
 aggiunta
-nessun percorso
+947 2183 4576 7983 11212 12468 13404 14283
 non rottamata
 aggiunta
 aggiunta
@@ -12924,7 +12924,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-nessun percorso
+14080 13317 12442 11500 10325 8559 5728 2322 1508
 aggiunta
 aggiunta
 aggiunta
@@ -13118,7 +13118,7 @@ demolita
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+13636 12782 11860 10834 9332 6986 3659 476 238
 aggiunta
 aggiunta
 aggiunta
@@ -13554,7 +13554,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+14955 14498 13859 13029 12094 11212 9922 7922 4683 1350 480
 aggiunta
 aggiunta
 aggiunta
@@ -15528,7 +15528,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+14686 14080 13317 12442 11500 10325 8559 5728 2322 135
 aggiunta
 aggiunta
 aggiunta
@@ -15606,7 +15606,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1089 1474 3369 6436 9816 11860 12877 13824 14604 15233
 aggiunta
 aggiunta
 aggiunta
@@ -17674,5 +17674,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+12834 11910 10901 9434 7171 3837 1047

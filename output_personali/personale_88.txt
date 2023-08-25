@@ -2582,7 +2582,7 @@ non demolita
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+16175 16121 15894 15411 14318 11998 7240 3725 335
 aggiunta
 aggiunta
 aggiunta
@@ -2690,7 +2690,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+1818 3327 8375 11362
 aggiunta
 aggiunta
 aggiunta
@@ -4502,7 +4502,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2310 3323 8330 11353 16121
 aggiunta
 aggiunta
 rottamata
@@ -6092,7 +6092,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+1650 2804 7527 10923 15713
 aggiunta
 non rottamata
 aggiunta
@@ -6675,7 +6675,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+16304 16236 16112 15837 15285 14118 11628 6811 3028 857
 rottamata
 rottamata
 aggiunta
@@ -10619,7 +10619,7 @@ non aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+15587 14703 12874 8873 5202 1355
 aggiunta
 aggiunta
 aggiunta
@@ -11466,7 +11466,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+15837 15285 14068 11487 6625 2567 415
 aggiunta
 aggiunta
 demolita
@@ -12674,7 +12674,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-nessun percorso
+16137 15877 15407 14315 11953 7222 3616 713
 aggiunta
 aggiunta
 demolita
@@ -17375,7 +17375,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+2310 3160 8314 11391 16236
 aggiunta
 aggiunta
 non aggiunta
@@ -18262,7 +18262,7 @@ demolita
 aggiunta
 aggiunta
 demolita
-nessun percorso
+150 269 1049 3126 8236 11242 16114
 non rottamata
 aggiunta
 aggiunta
@@ -19973,5 +19973,4 @@ aggiunta
 aggiunta
 demolita
 demolita
-nessun percorso
-nessun percorso
+2254 3160 8299 11275 16132

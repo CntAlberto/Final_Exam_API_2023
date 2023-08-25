@@ -92,7 +92,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-5088 207
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -927,7 +927,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-5071 98
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -1071,7 +1071,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-5130 933
+nessun percorso
 demolita
 aggiunta
 aggiunta
@@ -1499,4 +1499,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-5077 286
+5077 4983 4801 4500 4136 3884 3872 3821 3762 3654 3470 3133 2439 1922 995 932 872 816 772 730 683 637 608 570 510 458 423 401 343 286

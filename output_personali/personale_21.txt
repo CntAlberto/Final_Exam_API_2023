@@ -237,7 +237,7 @@ aggiunta
 aggiunta
 demolita
 non aggiunta
-2098 123
+nessun percorso
 non rottamata
 aggiunta
 aggiunta
@@ -284,7 +284,7 @@ aggiunta
 aggiunta
 233 313 403 493 600 705 824 1094 1520 2003 2328
 aggiunta
-2196 123
+2196 1953 1587 1094 573 466 379 313 219 123
 aggiunta
 aggiunta
 aggiunta
@@ -612,4 +612,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-1922 159
+1922 1587 1094 573 466 377 313 217 159

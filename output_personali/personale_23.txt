@@ -14,7 +14,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-2311 142
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -78,7 +78,7 @@ aggiunta
 aggiunta
 aggiunta
 nessun percorso
-2739 142
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -357,7 +357,7 @@ aggiunta
 aggiunta
 non demolita
 aggiunta
-2117 130
+2117 1866 1610 1374 1208 936 446 130
 aggiunta
 aggiunta
 aggiunta
@@ -407,7 +407,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-2528 303
+2528 2450 2350 2199 1978 1701 1453 1264 1048 649 303
 aggiunta
 aggiunta
 aggiunta
@@ -563,4 +563,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-2577 116
+2577 2528 2450 2350 2199 1978 1688 1424 1249 1004 600 116

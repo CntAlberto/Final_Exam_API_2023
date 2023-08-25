@@ -273,7 +273,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4432 994
+4432 4398 4278 4201 4041 3948 3648 3153 2620 2112 1544 994
 aggiunta
 demolita
 rottamata
@@ -844,7 +844,7 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-4717 424
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -1279,7 +1279,7 @@ aggiunta
 aggiunta
 non rottamata
 demolita
-4718 660
+4718 4708 4676 4654 4620 4593 4544 4463 4398 4276 4118 3900 3560 3053 2522 2036 1459 660
 aggiunta
 aggiunta
 non aggiunta

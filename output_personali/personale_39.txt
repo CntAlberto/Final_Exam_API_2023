@@ -767,7 +767,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4627 157
+4627 4476 4261 4043 3813 3565 3303 3093 2886 2682 2541 2300 1863 1001 157
 aggiunta
 aggiunta
 aggiunta
@@ -912,7 +912,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-5042 1526
+5042 4942 4895 4781 4621 4476 4261 4043 3813 3565 3303 3093 2886 2682 2539 2300 1863 1526
 aggiunta
 non rottamata
 aggiunta
@@ -925,7 +925,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-5306 811
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -1193,7 +1193,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4988 398
+4988 4867 4720 4551 4344 4105 3858 3615 3358 3121 2886 2682 2539 2282 1832 967 398
 aggiunta
 aggiunta
 aggiunta
@@ -1280,7 +1280,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4560 110
+4560 4344 4105 3858 3615 3358 3121 2886 2682 2539 2282 1832 967 110
 non rottamata
 demolita
 aggiunta
@@ -1480,7 +1480,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-5019 777
+5019 4915 4781 4621 4416 4184 3939 3687 3463 3213 2968 2758 2583 2359 1961 1199 777
 aggiunta
 aggiunta
 aggiunta

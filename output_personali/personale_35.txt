@@ -160,7 +160,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-3759 1338
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -272,7 +272,7 @@ aggiunta
 non demolita
 aggiunta
 aggiunta
-4582 617
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -419,7 +419,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4630 270
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -717,7 +717,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-4625 123
+4625 4618 4582 4509 4363 4169 3848 3574 3475 3449 3419 3377 3350 3276 3226 3148 3020 2806 2471 1927 1409 1128 1028 905 838 731 632 531 442 354 294 248 189 123
 aggiunta
 aggiunta
 non aggiunta
@@ -981,7 +981,7 @@ rottamata
 aggiunta
 aggiunta
 aggiunta
-4411 81
+4411 4203 3932 3624 3472 3449 3419 3377 3350 3276 3207 3080 2907 2653 2222 1608 1237 1059 978 862 745 647 550 475 398 323 248 189 123 81
 aggiunta
 aggiunta
 aggiunta

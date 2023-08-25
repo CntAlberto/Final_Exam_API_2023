@@ -58,7 +58,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-567 31
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -693,4 +693,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-669 69
+669 623 549 398 239 120 94 69

@@ -2764,7 +2764,7 @@ rottamata
 demolita
 aggiunta
 aggiunta
-nessun percorso
+555 743 1018 1318 1668 2063 2432 2721 3253 4081 5114 6511 8268 9327 9644 9794 9862 9880
 non aggiunta
 aggiunta
 aggiunta
@@ -2779,7 +2779,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+517 743 996 1318 1668 2063 2432 2721 3243 4081 5114 6511 8350
 aggiunta
 aggiunta
 aggiunta
@@ -2933,7 +2933,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1119 1318 1668 2063 2432 2711 3243 4081 5114 6511 8268 9327 9615 9760
 non aggiunta
 aggiunta
 demolita
@@ -4841,7 +4841,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+68 168 370 571 857 1188 1569 1978 2430 2863 3459 4398 5602 7198 9020
 aggiunta
 aggiunta
 aggiunta
@@ -5025,7 +5025,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+1119 1188 1569 1978 2430 2848 3459 4293 5484 7066 8864
 aggiunta
 aggiunta
 aggiunta
@@ -6890,7 +6890,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+56 168 370 571 857 1188 1547 1978 2430 2848 3459 4293 5484 7066 8864
 aggiunta
 aggiunta
 aggiunta
@@ -8973,7 +8973,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+411 451 731 996 1356 1760 2200 2646 3243 4081 5114 6501 8306 9356 9680
 aggiunta
 aggiunta
 aggiunta
@@ -9057,7 +9057,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+476 571 857 1188 1547 1920 2383 2878 3552 4525 5756 7458 9131 9599
 aggiunta
 aggiunta
 aggiunta
@@ -9760,7 +9760,7 @@ aggiunta
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+9327 8981 8441 7503 5794 4103 2986 2236 1745 1314 928 588 485
 aggiunta
 aggiunta
 aggiunta
@@ -9839,7 +9839,7 @@ demolita
 demolita
 aggiunta
 aggiunta
-nessun percorso
+8536 7667 6102 4303 3112 2321 1830 1400 990 652 519
 aggiunta
 aggiunta
 aggiunta
@@ -10050,7 +10050,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+121 207 451 731 976 1332 1731 2175 2646 3243 4081 5114 6511 8360
 aggiunta
 aggiunta
 aggiunta
@@ -11031,7 +11031,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+8642 7857 6448 4602 3363 2470 1977 1506 1101 731 482
 aggiunta
 demolita
 aggiunta
@@ -12225,5 +12225,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
-nessun percorso
+1726 1977 2430 2878 3552 4525 5756 7458 9182 9615 9779

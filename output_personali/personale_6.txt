@@ -100,7 +100,7 @@ non rottamata
 aggiunta
 aggiunta
 aggiunta
-585 51
+nessun percorso
 aggiunta
 aggiunta
 aggiunta
@@ -177,4 +177,4 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-577 75
+577 544 502 477 463 447 435 414 388 341 249 134 75
