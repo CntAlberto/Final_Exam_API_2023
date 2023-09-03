@@ -9772,7 +9772,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+870032715 765855242 608844386 401770904 206168356 116142571 42959941 33651193
 aggiunta
 aggiunta
 aggiunta
@@ -16597,7 +16597,7 @@ aggiunta
 demolita
 aggiunta
 aggiunta
-nessun percorso
+61781928 80622096 144472778 221781219 311964048 453227768 666228264 859449223
 rottamata
 aggiunta
 demolita
@@ -24618,7 +24618,7 @@ non aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+845578705 727108185 555605524 335060277 175612031 90536924 24350400 2699846
 aggiunta
 aggiunta
 aggiunta
@@ -37006,7 +37006,7 @@ demolita
 non demolita
 non aggiunta
 aggiunta
-nessun percorso
+924923856 858992590 747436585 584020237 368048433 188533605 100473271 32893692 14293930
 aggiunta
 aggiunta
 aggiunta
@@ -48494,7 +48494,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+935369465 877758390 778153370 626115132 419778992 216409148 122864985 48375972 28767672
 aggiunta
 aggiunta
 demolita
@@ -48906,7 +48906,7 @@ demolita
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+67319052 84663008 149283416 229706654 325458459 479758620 702231716 884015925
 aggiunta
 aggiunta
 aggiunta
@@ -51612,7 +51612,7 @@ aggiunta
 aggiunta
 demolita
 demolita
-nessun percorso
+25693737 47643310 102324827 172000452 256426182 360012494 534426366 758093333 917551119 989242129
 aggiunta
 aggiunta
 aggiunta
@@ -54375,7 +54375,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+959640314 923297734 856550872 743302236 578585459 362940126 186342252 98672519 62767493
 demolita
 aggiunta
 rottamata
@@ -56529,7 +56529,7 @@ aggiunta
 non rottamata
 aggiunta
 rottamata
-nessun percorso
+826983184 697786027 513966577 288575713 159654971 77114296 44883104
 rottamata
 rottamata
 aggiunta
@@ -61235,7 +61235,7 @@ non rottamata
 aggiunta
 demolita
 rottamata
-nessun percorso
+913942894 840051088 717980620 542150198 320292974 169717550 84956680 69582606
 rottamata
 aggiunta
 rottamata
@@ -61742,7 +61742,7 @@ aggiunta
 demolita
 aggiunta
 aggiunta
-nessun percorso
+845796928 727108185 555148231 335060277 179597965
 aggiunta
 demolita
 aggiunta
@@ -73905,7 +73905,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+42080375 83606164 148143395 228349858 323712417 476926046 698255688 882241190 979112348
 aggiunta
 aggiunta
 aggiunta
@@ -80593,7 +80593,7 @@ rottamata
 aggiunta
 rottamata
 aggiunta
-nessun percorso
+908140397 829835750 701757599 519541449 294346802 161178275 77828887 73342081
 aggiunta
 aggiunta
 aggiunta
@@ -98228,7 +98228,7 @@ aggiunta
 aggiunta
 demolita
 rottamata
-nessun percorso
+955793518 915284464 842139347 720536154 545964906 323712417 170575953 85537193 45556559
 aggiunta
 aggiunta
 aggiunta
@@ -100063,7 +100063,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+964672198 931996530 871630788 767687406 611384708 401330158 206168356 114522584 85026911
 aggiunta
 aggiunta
 demolita
@@ -104580,7 +104580,7 @@ demolita
 demolita
 rottamata
 aggiunta
-nessun percorso
+30528412 73342081 135286844 212938826 305714305 446662180 659179163 856547120
 rottamata
 aggiunta
 aggiunta
@@ -117565,7 +117565,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+871104201 767110409 611231416 401292464 206168356 114522584 95891290
 non aggiunta
 aggiunta
 rottamata
@@ -138923,5 +138923,4 @@ demolita
 rottamata
 rottamata
 aggiunta
-nessun percorso
-nessun percorso
+909769203 832584418 705454990 524259551 299300506 162672224 109354648

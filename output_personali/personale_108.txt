@@ -3283,7 +3283,7 @@ demolita
 rottamata
 aggiunta
 non demolita
-nessun percorso
+988455280 978795371 956751500 916273423 848795005 777976435 727702267 677592636 578993448 316580198 94570421
 aggiunta
 aggiunta
 aggiunta
@@ -13598,7 +13598,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-nessun percorso
+724157398 669987729 552146499 236272219 84021577
 rottamata
 aggiunta
 non demolita
@@ -31528,7 +31528,7 @@ aggiunta
 demolita
 rottamata
 rottamata
-nessun percorso
+957277368 916514171 849528936 770137788 723895354 669132365 549670852 361861366 31872466 26040460
 aggiunta
 aggiunta
 rottamata
@@ -55250,7 +55250,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+893898837 818047107 745096923 709359727 638535752 474861577 55691380 21846322
 aggiunta
 rottamata
 rottamata
@@ -119337,7 +119337,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+135120152 255413605 442476584 842127103
 aggiunta
 aggiunta
 rottamata
@@ -132916,7 +132916,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+100186931 127103729 273197702 488150583 913880765
 aggiunta
 non demolita
 aggiunta
@@ -140175,7 +140175,7 @@ aggiunta
 aggiunta
 aggiunta
 non rottamata
-nessun percorso
+73741900 115985572 258302024 449464388 853916284 934263896 991957314
 aggiunta
 aggiunta
 aggiunta
@@ -147863,7 +147863,7 @@ aggiunta
 aggiunta
 aggiunta
 aggiunta
-nessun percorso
+964850094 930635843 870884843 790895806 729753069 679606418 573043624 365066667 31675142 15685902
 aggiunta
 aggiunta
 aggiunta
@@ -164863,7 +164863,7 @@ rottamata
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+910691334 841034087 761810972 720555311 661378301 531101460 170001337 34144606
 aggiunta
 aggiunta
 aggiunta
@@ -196432,7 +196432,7 @@ non aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+924207416 860878775 780252139 725434640 671004172 553523598 297735083 46941576
 aggiunta
 aggiunta
 aggiunta
@@ -205990,7 +205990,7 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
+848974726 769053796 722118994 664895205 538826915 194890249 91102743
 aggiunta
 aggiunta
 rottamata
@@ -222095,7 +222095,7 @@ aggiunta
 aggiunta
 aggiunta
 demolita
-nessun percorso
+41731167 129190484 276233464 495779171 924781621 988080527
 aggiunta
 aggiunta
 non aggiunta
@@ -223843,7 +223843,7 @@ aggiunta
 demolita
 demolita
 demolita
-nessun percorso
+20889006 115700305 258181161 449464388 854454554 934938655
 demolita
 demolita
 demolita
@@ -227963,7 +227963,7 @@ aggiunta
 aggiunta
 non rottamata
 demolita
-nessun percorso
+76973696 125656314 271166265 482778172 906290279
 aggiunta
 aggiunta
 aggiunta
@@ -259281,5 +259281,4 @@ aggiunta
 aggiunta
 aggiunta
 rottamata
-nessun percorso
-nessun percorso
+23225549 125205471 270852510 482270046 904920540 977122213
