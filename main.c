@@ -220,7 +220,6 @@ void addAutoAtDistance() {
     if (carToInsert > stationToFind->maxCar)stationToFind->maxCar = carToInsert;
     printf("aggiunta\n");
 }
-
 void removeAutoAtDistance() {
     long distanceOfTheStation, carToRemove, i, removedCar;
     if (scanf("%ld", &distanceOfTheStation) == 0) return;
